@@ -9,4 +9,4 @@ title: This is real
 - This third one is unnecessary
 
 #### And this photo
-![nyc]({{ site.baseurl }}/images/NEW-YORK-CITY-SKYLINE.jpg "NYC Skyline")
+![nyc](images/NEW-YORK-CITY-SKYLINE.jpg "NYC Skyline")
