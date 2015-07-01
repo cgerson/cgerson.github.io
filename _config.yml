@@ -9,7 +9,7 @@ name: Claire Gerson
 description: Data Scientist in Training
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: cgerson.github.io/images/Claire foto 3.jpg
+avatar: {{ site.baseurl }}/images/Claire foto 3.jpg
 
 #
 # Flags below are optional
@@ -20,7 +20,7 @@ footer-links:
   dribbble:
   email: clairegerson@gmail.com
   facebook:
-  flickr: claireger
+  flickr: people/21231627@N05/
   github: cgerson
   instagram:
   linkedin: clairegerson
