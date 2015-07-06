@@ -3,15 +3,13 @@ layout: post
 title: MTA Turnstile Analysis
 ---
 
-The first project assigned to us at Metis was based on MTA Turnstile Data. 
-
-!["MTA Turnstile datasets"](http://web.mta.info/developers/turnstile.html)
+The first project assigned to us at Metis was based on <a href="http://web.mta.info/developers/turnstile.html">MTA Turnstile Data</a>.
 
 Our task was to help fictional group WTWY in their efforts to optimize their street team in collecting emails from interested parties, in hopes of raising awareness of their organization and eventually <b>maximizing participation and financial contributions</b>.
 
 The turnstile data includes total ridership for each subway station, measured in four hour intervals at inconsistent times. 
 
-![subway]({{ site.baseurl }}/images/Interesting.png "Subway man")
+![subway]({{ site.baseurl }}/images/Interested.png "Subway man")
 
 [Aside: At this point, I tried to avoid the wistful dreamy thinking of "gee, wouldn't it be great if the data were collected in a completely different way", because it wasn't. This likely comes from my background in economics, where the worlds we analyze are perfect (i.e. "assume perfection...").]
 
