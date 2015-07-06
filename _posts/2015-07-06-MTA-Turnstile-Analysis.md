@@ -11,7 +11,7 @@ The turnstile data includes total ridership for each subway station, measured in
 
 ![subway]({{ site.baseurl }}/images/Interested.png "Subway man")
 
-[Aside: At this point, I tried to avoid the wistful dreamy thinking of "hey, wouldn't it be great if the data were collected in a completely different way", because it wasn't. I come from a background in economics, where the worlds we analyze are perfect (i.e. "assume perfection...").]
+[Aside: At this point, I tried to avoid the wistful dreamy thinking of "hey, wouldn't it be great if the data were collected in a completely different way", because they weren't. This likely stems from my background in economics, where the worlds we analyze are perfect (i.e. "assume perfection...").]
 
 My group proposed the following to the fictional client: an analysis of top stations with highest traffic during the workweek (divided into morning and evening traffic), as well a classification of stations in proximity to tech-related activity. Provided with both, the client could maximize their efforts by deploying their street team at the locations with the greatest and most relevant audience.
 
