@@ -13,9 +13,9 @@ The turnstile data includes entry and exit counts for each subway station, measu
 
 My group proposed the following to the fictional client: an analysis of top stations with highest traffic during the workweek (divided into morning and evening traffic), as well a classification of stations in proximity to tech-related activity. Provided with both, the client could <b>optimize their efforts by deploying their street team at the locations with the greatest and most relevant audience</b>.
 
-Our presentation:
-<iframe src="//slides.com/claireger/mta/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 In the end, we presented the client with the following proof of concept, where red text are inputs that can be modified by the user.
 
 ![Design]({{ site.baseurl }}/images/MTA-POC.jpg "POC")
+
+Here is a copy of the full presentation:
+<iframe src="//slides.com/claireger/mta/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
