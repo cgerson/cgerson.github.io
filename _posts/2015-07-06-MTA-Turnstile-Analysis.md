@@ -16,6 +16,6 @@ My group proposed the following to the fictional client: an analysis of top stat
 Our presentation:
 <iframe src="//slides.com/claireger/mta/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-We presented the client with the following proof of concept, where red text are inputs that can be modified by the user.
+In the end, we presented the client with the following proof of concept, where red text are inputs that can be modified by the user.
 
 ![Design]({{ site.baseurl }}/images/MTA-POC.jpg "POC")
