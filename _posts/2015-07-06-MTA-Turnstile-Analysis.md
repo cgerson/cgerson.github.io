@@ -9,7 +9,7 @@ Our task was to help fictional group WTWY in their efforts to optimize their str
 
 The turnstile data includes entry and exit counts for each subway station, measured in four hour intervals at inconsistent times. Required significant man-hours to clean and organize the data. 
 
-[Aside: At this point, I tried to avoid the wistful dreamy thinking of "hey, wouldn't it be great if the data were collected in a completely different way", because they weren't. This likely stems from my background in economics, where the worlds we analyze are perfect (i.e. "assume perfection...").]
+<iframe src="//slides.com/claireger/mta/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ![subway]({{ site.baseurl }}/images/Interested.png "Subway man")
 
