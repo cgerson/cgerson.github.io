@@ -3,7 +3,7 @@ layout: post
 title: Webscraping
 ---
 
-This week we are using BeautifulSoup to extract data from websites. Perfect timing, given that for my latest project I needed to build a database of actor information.
+This week we are using <a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup</a> to extract data from websites. Perfect timing, given that for my latest project I needed to build a database of actor information.
 
 To the HTML parser!
 
@@ -107,11 +107,11 @@ Then, I used my existing variables to create more features. For example:
 
 * Filter for acting as principal occupation:
 
-  	 df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
+  	     df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
 
 * Gender based on actor or actress designation:
 
-  	 df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
+  	       df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
 
 ### So fresh and so clean
 
