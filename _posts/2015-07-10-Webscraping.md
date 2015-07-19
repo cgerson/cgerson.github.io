@@ -17,8 +17,8 @@ The search differed for each piece of data.
 
 On Box Office Mojo's site, I used soup's "find all" method with regular expressions to match a tag that varied by actor. This code, for example, returns the name of each actor on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo</a> and adds them to a list of actors.
 
-   for link in soup.find_all('a',attrs = {'href':re.compile('/chart/')}):
-       [actors_FULL.append(str(a.text)) for a in link.find_all('b')]
+       for link in soup.find_all('a',attrs = {'href':re.compile('/chart/')}):
+       	   [actors_FULL.append(str(a.text)) for a in link.find_all('b')]
 
 ![box_office_mojo]({{ site.baseurl }}/images/BoxOfficeMojo.png "Actors")
 
@@ -100,14 +100,17 @@ To begin with, I converted each variable I had collected into its appropriate da
 Then, I used my existing variables to create more features. For example:
 
 * Current age:
+
   	  def calc_age(bday):
 	      today = datetime.date(datetime.now(pytz.utc))
 	      return today.year - bday.year
 
 * Filter for acting as principal occupation:
+
   	 df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
 
 * Gender based on actor or actress designation:
+
   	 df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
 
 ### So fresh and so clean
