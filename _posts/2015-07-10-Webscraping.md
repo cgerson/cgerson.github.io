@@ -1,54 +1,146 @@
 ---
-draft: true
-published: false
+published: true
 layout: post
-title: Webscraping
+title: Webscraping for the win: part 1
 ---
 
-Webscraping for the win.
+This week we are using BeautifulSoup to extract data from websites. Perfect timing, given that for my latest project I needed to build a database of actor information.
 
-This week we are using BeautifulSoup to extract data from websites.
+To the HTML parser!
 
-My approach was to extract from pages of the same format from the same root site, finding identifier tags for desired data and creating a formula to locate and extract in the same way for every page.
+### Scraping
 
-First road bump: tags vary for the same data.
+My initial approach was to create a function to target certain HTML tags. That way I could run the code over a number of pages and let the information roll in.
 
-Example: 
-Most names are linked: http://www.boxofficemojo.com/oscar/chart/?view=allcategories&yr=2014&p=.htm
-Few names are linked: http://www.boxofficemojo.com/oscar/chart/?yr=2002&view=allcategories&p=.htm
+The search differed for each piece of data.
 
-My current approach, then, is to mine manually. Still hopeful of finding a more automated way.
+#### Box Office Mojo
 
-Update: have mined birthdays from Wikipedia for my dataset. Very effective. Only 29 of 728 were not found. Inputting manually. With a smarter system, I could search last name only, and key words. Cleaning birthdays -- converting to datetime object, stripping whitespace.
+On Box Office Mojo's site, I used soup's find_all method with regular expressions to match a tag that varied by actor. This code, for example, returns the name of each actor on <a href: "http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm">Box Office Mojo</a> and adds them to a list of actors.
 
-Writing straight to csv avoids unicode problem, converts to string (or becomes string once loaded back into Python)
+<sub>
+   for link in soup.find_all('a',attrs = {'href':re.compile('/chart/')}):
+        [actors_FULL.append(str(a.text)) for a in link.find_all('b')]
+</sub>
 
-Controlling for "principal occupation" by creating dummy variable, where 1 is if "Actor" or "Actress" is the first occupation listd on their Wikipedia page.
+![box_office_mojo]({{ site.baseurl }}/images/BoxOfficeMojo.png "Actors")
 
-Measuring number of months lived through a US recessionary period between certain ages. Assuming US recession affects global economy (re foreign actors), certainly would affect Total Gross of movies
+This resulted in about 730 actors.
 
-Total Gross variable in millions
+#### Academy Awards Database
 
-Do economic dips determine the success of Hollywood actors?
+On this site, the information I needed was behind a search box. Here I created a post request to submit a search query for Oscar nominees from year 1960 ('BSFromYear: 33') to 2014 ('BSToYear': 87).
 
-Success means high grossing films.
+<sub>
+    url = "http://awardsdatabase.oscars.org/ampas_awards/BasicSearch"
+    data = {'action': 'performSearch',
+                'BSFromYear': 53,
+                'BSToYear': 87,
+                'BSCategory': 1061,
+		'BSCategory': 1062,
+		'BSCategory': 1063,
+		'BSCategory': 1064,
+               'displayType': 1}
+    response = requests.post(url, data=data)
+    page = response.text
+    soup = BeautifulSoup(page,"html.parser")
+</sub>
 
-Actors are contemporary actors
+Then, I used regular expressions again to collect a list of names of all Oscar nominees. 
 
-Films featuring these actors grossed ...
+    for name in soup.find_all('a',attrs = {'href':re.compile('BSNominationID')}):
+    	osc_names.append(name.text)
 
-Narrow down dataframe to complete info
+![oscars]({{ site.baseurl }}/images/oscar_search.png "Oscars")
 
-Mothers of Aspiring Millenial Actors (MOMA)
-- Unfortunately, I cannot give you data on Actors who didn't make it
+There were 187 actors from my original dataset that figured in the list of oscar nominees.
 
-Probability of earning more given recession given you've "made it"
+#### Wikipedia
 
-Some input manually, "The Rock" for example
-- as mentioned before, with a better system, if value generated was none, I could go back and Google actor name ("The Rock" in this instance), then find the Wikipedia entry. Or google through Wikipedia directly.
-- some Years active had (screen) or (acting) in parenthesis that must have confused scraper...
+Here I could augment my database with personal information about each actor. This required setting up a loop to parse through the Wikipedia page of every individual actor. Then, within the actor's page, I pulled the "role" or "Occupation" (different labels for same data). The beginning of the code looks like this:
 
+<sub>
+     for actor in df.Actor:
+         new_name = actor.replace(" ","_")
+         url = "https://en.wikipedia.org/wiki/"+new_name
+	 response = requests.get(url)
+         page = response.text
+         soup = BeautifulSoup(page,"html.parser")
 
-Variables:
-Actor = unique ID
-Total_Gross_
+       	 try:
+            writer.writerow((actor,soup.find(class_="role").text))
+         except:
+            try:
+                writer.writerow((actor,soup.find(scope_="Occupation").text))
+            except:
+		writer.writerow((actor,"None"))
+</sub>
+
+So easy. Too easy. Unfortunately, some actor's Wikipedia pages were not so simple. A quick fix was modifying the code to catch those pages which end in "(actor)".
+
+<sub>
+   	 try:
+            writer.writerow((actor,soup.find(class_="role").text))
+         except:
+            try:
+                writer.writerow((actor,soup.find(scope_="Occupation").text))
+            except:
+                try: 
+                    url = "https://en.wikipedia.org/wiki/"+new_name+"_(actor)"
+                    response = requests.get(url)
+                    page = response.text
+                    soup = BeautifulSoup(page,"html.parser")
+                    writer.writerow((actor,soup.find(class_="role").text))
+                except:
+                    try:
+                        writer.writerow((actor,soup.find(scope_="Occupation").text))
+                    except:
+                        writer.writerow((actor,"None"))
+</sub>
+
+In the end I successfully pulled Wikipedia info on about 95% of my original actors list from Box Office Mojo. The rest I inputted manually, something feasible for the small scale of my dataset. For a greater empty value size, I might try using Wikipedia's search box instead, using key words such as "Actor" or "movie" alongside the actor's name to identify the correct Wikipedia page.
+
+### Cleaning
+
+Cleaning was a continual process as I found more and more uses for my dataset.
+
+To begin with, I converted each variable I had collected into its appropriate data type. Unicode to string (saving as csv then loading back into python was one solution), dates to datetime objects, strings to ints, stripping whitespace, etc.
+
+Then, I used my existing variables to create more features. For example:
+
+Current age:
+<sub>
+	def calc_age(bday):
+    	    today = datetime.date(datetime.now(pytz.utc))
+    	    return today.year - bday.year
+</sub>
+
+Filter for acting as principal occupation:
+<sub>
+       df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
+</sub>
+
+Gender based on actor or actress designation:
+<sub>
+       df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
+</sub>
+
+### Finally, clean and complete values
+
+After much toiling, creating, destroying and learning, I ended up with a complete dataset with 617 observations (actors with acting as primary occupation).
+
+codebook = {
+    "Actor": "Name of actor or actress (617 obs)",
+    "Total_Gross_2015_Dol": "Amount grossed by films featuring this actor (Box Office Mojo)",
+    "Num_movies": "Number of movies used to calculate total gross (Box Office Mojo)",
+    "Avg_Gross": "Total gross divided by number of movies",
+    "Birthday": "Actor's birthday (source: Wikipedia)",
+    "Occupation": "Actor's occupation (source: Wikipedia)",
+    "Gender": "Actor's gender",    
+    "Num_months_rec_pd_15_20": "Count of months of US economic recession between ages 15-20 (based on NBER economic indicators)",
+    "Num_months_rec_pd_20_25": "Count of months of US economic recession between ages 0-15 (based on NBER economic indicators)",
+    "Age": "Age of actor",
+    "Career_start": "Year acting career began (source: Wikipedia)",
+    "Years_acting": "Length of acting career",
+    "Num_osc": "Number of Oscar nominations"
+}
