@@ -100,7 +100,6 @@ To begin with, I converted each variable I had collected into its appropriate da
 Then, I used my existing variables to create more features. For example:
 
 * Current age:
-
   	  def calc_age(bday):
 	      today = datetime.date(datetime.now(pytz.utc))
 	      return today.year - bday.year
