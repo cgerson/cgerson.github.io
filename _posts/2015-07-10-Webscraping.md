@@ -101,17 +101,17 @@ Then, I used my existing variables to create more features. For example:
 
 * Current age:
 
-		def calc_age(bday):
-	      	    today = datetime.date(datetime.now(pytz.utc))
-	      	    return today.year - bday.year
+> def calc_age(bday):
+      > today = datetime.date(datetime.now(pytz.utc))
+      > return today.year - bday.year
 
 * Filter for acting as principal occupation:
 
-  	     df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
+> df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
 
 * Gender based on actor or actress designation:
 
-  	       df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
+> df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
 
 ### So fresh and so clean
 
