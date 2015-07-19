@@ -44,8 +44,8 @@ On this site, the information I needed was behind a search box. Here I created a
 
 Then, I used regular expressions again to collect a list of names of all Oscar nominees. 
 
-    for name in soup.find_all('a',attrs = {'href':re.compile('BSNominationID')}):
-    	osc_names.append(name.text)
+      for name in soup.find_all('a',attrs = {'href':re.compile('BSNominationID')}):
+      	  osc_names.append(name.text)
 
 ![oscars]({{ site.baseurl }}/images/oscar_search.png "Oscars")
 
@@ -100,22 +100,22 @@ To begin with, I converted each variable I had collected into its appropriate da
 
 Then, I used my existing variables to create more features. For example:
 
-Current age:
-	def calc_age(bday):
-    	    today = datetime.date(datetime.now(pytz.utc))
-    	    return today.year - bday.year
+* Current age:
+  	  def calc_age(bday):
+	      today = datetime.date(datetime.now(pytz.utc))
+	      return today.year - bday.year
 
-Filter for acting as principal occupation:
-       df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
+* Filter for acting as principal occupation:
+  	 df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
 
-Gender based on actor or actress designation:
-       df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
+* Gender based on actor or actress designation:
+  	 df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
 
 ### So fresh and so clean
 
 After much toiling, creating, destroying and learning, I ended up with a complete dataset with 617 observations (actors with acting as primary occupation).
 
-      codebook = {
+     codebook = {
     "Actor": "Name of actor or actress (617 obs)",
     "Total_Gross_2015_Dol": "Amount grossed by films featuring this actor (Box Office Mojo)",
     "Num_movies": "Number of movies used to calculate total gross (Box Office Mojo)",
