@@ -13,7 +13,7 @@ My initial approach was to create a function to target certain HTML tags. That w
 
 The search differed for each piece of data.
 
-#### Box Office Mojo
+### Data source: Box Office Mojo
 
 On Box Office Mojo's site, I used soup's find_all method with regular expressions to match a tag that varied by actor. This code, for example, returns the name of each actor on <a href= "http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm">Box Office Mojo</a> and adds them to a list of actors.
 
@@ -26,7 +26,7 @@ On Box Office Mojo's site, I used soup's find_all method with regular expression
 
 This resulted in about 730 actors.
 
-#### Academy Awards Database
+### Data source: Academy Awards Database
 
 On this site, the information I needed was behind a search box. Here I created a post request to submit a search query for Oscar nominees from year 1960 ('BSFromYear: 33') to 2014 ('BSToYear': 87).
 
@@ -54,7 +54,7 @@ Then, I used regular expressions again to collect a list of names of all Oscar n
 
 There were 187 actors from my original dataset that figured in the list of oscar nominees.
 
-#### Wikipedia
+### Data source: Wikipedia
 
 Here I could augment my database with personal information about each actor. This required setting up a loop to parse through the Wikipedia page of every individual actor. Then, within the actor's page, I pulled the "role" or "Occupation" (different labels for same data). The beginning of the code looks like this:
 
@@ -99,7 +99,7 @@ So easy. Too easy. Unfortunately, some actor's Wikipedia pages were not so simpl
 
 In the end I successfully pulled Wikipedia info on about 95% of my original actors list from Box Office Mojo. The rest I inputted manually, something feasible for the small scale of my dataset. For a greater empty value size, I might try using Wikipedia's search box instead, using key words such as "Actor" or "movie" alongside the actor's name to identify the correct Wikipedia page.
 
-### Cleaning
+### Make it usable
 
 Cleaning was a continual process as I found more and more uses for my dataset.
 
@@ -124,7 +124,7 @@ Gender based on actor or actress designation:
        df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
 </sub>
 
-### Finally, clean and complete values
+### So fresh and so clean
 
 After much toiling, creating, destroying and learning, I ended up with a complete dataset with 617 observations (actors with acting as primary occupation).
 
