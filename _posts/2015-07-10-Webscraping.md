@@ -15,8 +15,7 @@ The search differed for each piece of data.
 
 ### Data source: Box Office Mojo
 
-On Box Office Mojo's site, I used soup's find_all method with regular expressions to match a tag that varied by actor. This code, for example, returns the name of each actor on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo</a> and adds them to a list of actors.
-
+On Box Office Mojo's site, I used soup's "find_all" method with regular expressions to match a tag that varied by actor. This code, for example, returns the name of each actor on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo</a> and adds them to a list of actors.
 
    for link in soup.find_all('a',attrs = {'href':re.compile('/chart/')}):
         [actors_FULL.append(str(a.text)) for a in link.find_all('b')]
