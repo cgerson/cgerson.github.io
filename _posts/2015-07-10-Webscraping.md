@@ -69,7 +69,7 @@ Here I could augment my database with personal information about each actor. Thi
             try:
                 writer.writerow((actor,soup.find(scope_="Occupation").text))
             except:
-		writer.writerow((actor,"None"))
+	        writer.writerow((actor,"None"))
 
 Running the code, I found many actors' pages were not accessed. Why? Because their URL was not built as easily as adding an underscore between their first and last name. A quick fix was modifying the code to catch those pages which end in "(actor)".
 
