@@ -23,10 +23,12 @@ On Box Office Mojo's site, I used soup's "find all" method with regular expressi
 Screenshot of Box Office Mojo HTML
 <div class="zoom-effect-container">
   <div class="image-card">
-       <img style= border: 1; margin: 0 auto; src="http://cgerson.github.io/images/BoxOfficeMojo.png"/><br>
+       <img style= border: 1; margin: 0 auto; src="http://cgerson.github.io/images/BoxOfficeMojo.png"/>
   </div>
 </div>
-<p></p>
+<br>
+<br/>
+
 
 This resulted in about 730 actor names. Dataset, begun.
 
