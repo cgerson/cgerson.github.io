@@ -27,7 +27,7 @@ This resulted in about 730 actor names. Dataset, begun.
 
 ### Data source: Academy Awards Database
 
-On this site, the information I needed was behind a search box. Here I created a post request to submit a search query for Oscar nominees from year 1960 ('BSFromYear: 33') to 2014 ('BSToYear': 87).
+On this site, the information I needed was behind a <a href="http://awardsdatabase.oscars.org/ampas_awards/BasicSearchInput.jsp" target="_blank">search box</a>. Here I created a post request to submit a search query for Oscar nominees from year 1960 ('BSFromYear: 33') to 2014 ('BSToYear': 87).
 
     url = "http://awardsdatabase.oscars.org/ampas_awards/BasicSearch"
     data = {'action': 'performSearch', 'BSFromYear': 53, 'BSToYear': 87, 'BSCategory': 1061, 'BSCategory': 1062, 'BSCategory': 1063, 'BSCategory': 1064, 'displayType': 1}
@@ -41,7 +41,7 @@ Then, I used regular expressions again to collect a list of names of all Oscar n
       	  osc_names.append(name.text)
 
 Screenshot of Oscars search engine HTML
-![minipic]({{ site.baseurl }}/images/oscar_search.png "Oscars")
+ <img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/oscar_search.png"/>
 
 Once merged, I foud there were 187 actors from my original dataset that had received at least one oscar nomination.
 
