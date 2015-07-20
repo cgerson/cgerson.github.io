@@ -8,17 +8,16 @@
   box-shadow: 3px 3px rgba(0,0,0,0.1);
   margin: 20px 0 20px 0;
   overflow: scroll;
+  font-size: 10px
+}
+
+.highlight pre code {
+display: block; font-size: 10px; white-space: pre; overflow-x: auto; word-wrap: normal;
 }
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   font-size:10px
-  padding: 10px 0 10px 60px;
-  letter-spacing: -1px;
-  margin-bottom: 20px;
-  width: 106%;
-  left: -60px
-  position: relative;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
@@ -89,4 +88,4 @@ code {
 .highlight .vg { color: #268BD2 } /* Name.Variable.Global */
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
-.highlight pre code { display: block; font-size: 10px; white-space: pre; overflow-x: auto; word-wrap: normal; }
+
