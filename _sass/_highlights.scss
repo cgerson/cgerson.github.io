@@ -14,14 +14,13 @@
 .highlight pre code {
 display: block;
 font-size: 16px;
-white-space: pre-line;
+white-space: pre-wrap;
 overflow-x: auto;
 word-wrap: break-word;
 }
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-  font-size:14px
 }
 
 .highlight .c { color: #586E75 } /* Comment */
