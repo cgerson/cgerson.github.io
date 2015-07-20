@@ -30,12 +30,19 @@ This resulted in about 730 actor names. Dataset, begun.
 On this site, the information I needed was behind a <a href="http://awardsdatabase.oscars.org/ampas_awards/BasicSearchInput.jsp" target="_blank">search box</a>. Here I created a post request to submit a search query for Oscar nominees from year 1960 ('BSFromYear: 33') to 2014 ('BSToYear': 87).
 
     url = "http://awardsdatabase.oscars.org/ampas_awards/BasicSearch"
-    data = {'action': 'performSearch', 'BSFromYear': 53, 'BSToYear': 87, 'BSCategory': 1061, 'BSCategory': 1062, 'BSCategory': 1063, 'BSCategory': 1064, 'displayType': 1}
+    data = {'action': 'performSearch',
+    'BSFromYear': 53,
+    'BSToYear': 87,
+    'BSCategory': 1061,
+    'BSCategory': 1062,
+    'BSCategory': 1063,
+    'BSCategory': 1064,
+    'displayType': 1}
     response = requests.post(url, data=data)
     page = response.text
     soup = BeautifulSoup(page,"html.parser")
 
-Then, I used regular expressions again to collect a list of names of all Oscar nominees. 
+Then, I used regular expressions again to collect a list of names of all Oscar nominees inside 'BSNominationID' tags.
 
       for name in soup.find_all('a',attrs = {'href':re.compile('BSNominationID')}):
       	  osc_names.append(name.text)
@@ -43,7 +50,7 @@ Then, I used regular expressions again to collect a list of names of all Oscar n
 Screenshot of Oscars search engine HTML
  <img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/oscar_search.png"/>
 
-Once merged, I foud there were 187 actors from my original dataset that had received at least one oscar nomination.
+Merging this list with my actors list revealed there were 187 actors from the original dataset that had received at least one oscar nomination.
 
 ### Data source: Wikipedia
 
@@ -102,11 +109,15 @@ Then, I used my existing variables to create more features. For example:
 
 #### Filter for acting as principal occupation:
 
-     df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1 if x.lower().startswith("actor") or x.lower().startswith("actress") else "None" if x=="None" else 0)
+     df['Occ_act_dummy'] = df['Occupation'].map(lambda x: 1
+     if x.lower().startswith("actor") or x.lower().startswith("actress")
+     else "None" if x=="None" else 0)
 
 #### Gender based on actor or actress designation:
 
-     df['Gender']=df['Occupation'].map(lambda x: 0 if "actor" in x.lower() else 1 if "actress" in x.lower() else "Unknown")
+     df['Gender']=df['Occupation'].map(lambda x: 0
+     if "actor" in x.lower()
+     else 1 if "actress" in x.lower() else "Unknown")
 
 ### So fresh and so clean
 
