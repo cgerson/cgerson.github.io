@@ -23,7 +23,7 @@ On Box Office Mojo's site, I used soup's "find all" method with regular expressi
 Screenshot of Box Office Mojo HTML
 <div class="zoom-effect-container">
   <div class="image-card">
-       <img src = "cgerson.github.io/images/BoxOfficeMojo.png"/>
+       <img src="http://cgerson.github.io/images/BoxOfficeMojo.png"/>
   </div>
 </div>
 
