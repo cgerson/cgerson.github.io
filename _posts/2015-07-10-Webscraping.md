@@ -21,14 +21,7 @@ On Box Office Mojo's site, I used soup's "find all" method with regular expressi
        	   [actors_FULL.append(str(a.text)) for a in link.find_all('b')]
 
 Screenshot of Box Office Mojo HTML
-<div class="zoom-effect-container">
-  <div class="image-card">
-       <img style= border: 1; margin: 0 auto; src="http://cgerson.github.io/images/BoxOfficeMojo.png"/>
-  </div>
-</div>
-<br>
-<br/>
-
+ <img style= border: 1; margin: 0 auto; src="http://cgerson.github.io/images/BoxOfficeMojo.png"/>
 
 This resulted in about 730 actor names. Dataset, begun.
 
