@@ -12,7 +12,11 @@
 }
 
 .highlight pre code {
-display: block; font-size: 16px; white-space: pre; overflow-x: auto; word-wrap: normal;
+display: block;
+font-size: 16px;
+white-space: pre-line;
+overflow-x: auto;
+word-wrap: break-word;
 }
 
 code {
