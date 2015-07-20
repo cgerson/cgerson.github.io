@@ -26,8 +26,7 @@ Screenshot of Box Office Mojo HTML
        <img src="http://cgerson.github.io/images/BoxOfficeMojo.png"/>
   </div>
 </div>
-
-
+<br>
 
 This resulted in about 730 actor names. Dataset, begun.
 
