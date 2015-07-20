@@ -110,6 +110,11 @@ img {
   max-width: 100%;
 }
 
+img[alt="minipic"] { 
+  max-width:  20px; 
+  display: block;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;

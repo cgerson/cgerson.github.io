@@ -21,7 +21,7 @@ On Box Office Mojo's site, I used soup's "find all" method with regular expressi
        	   [actors_FULL.append(str(a.text)) for a in link.find_all('b')]
 
 Screenshot of Box Office Mojo HTML
-![box_office_mojo]({{ site.baseurl }}/images/BoxOfficeMojo.png =100x20)
+![minipic]({{ site.baseurl }}/images/BoxOfficeMojo.png)
 
 This resulted in about 730 actor names. Dataset, begun.
 
@@ -41,7 +41,7 @@ Then, I used regular expressions again to collect a list of names of all Oscar n
       	  osc_names.append(name.text)
 
 Screenshot of Oscars search engine HTML
-![oscars]({{ site.baseurl }}/images/oscar_search.png "Oscars" =100x20)
+![minipic]({{ site.baseurl }}/images/oscar_search.png "Oscars")
 
 Once merged, I foud there were 187 actors from my original dataset that had received at least one oscar nomination.
 
