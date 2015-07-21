@@ -54,19 +54,19 @@ Oscar nominees endured MORE economic recessions on average.
 
 ## Statistical findings: and the Oscar goes to...
 
-Running an ordinary least squares regression reveals that neither the length of the actor's career nor the age they begin acting has a strong effect on their success. More surprisingly is that the number of months in economic recessions between ages 20-25 has a <b>positive</b>, although slight, effect on success. When the going gets tough...? 
+Running an ordinary least squares regression reveals that neither the length of the actor's career nor the age they begin acting has a strong effect on their success. More surprisingly is that the number of months in economic recessions between ages 20-25 has a <b>positive</b>, albeit slight, effect on success. When the going gets tough...? 
 
-However, with an R-squared of .25, we can confidently conclude that something other than the career length, the gender, the age career begins, and the number of recessions in one's early life is influencing the actor's success. 
+However, with an R-squared of only .25, we can confidently conclude that something other than the career length, the gender, the age career begins, and the number of recessions in one's early life is influencing the actor's success. My model as is cannot account for the variability.
 
 
 ## Caveats
 
 This dataset performed well for my purposes. However, accuracy in answering the initial question could be improved with the following:
 
-* Remove deseased actors from actors list (there are a few)
 * Expand sample to include mid-level actors
 * Find salary information for actors, over time
 * Use continuous economic indicators to capture intensity of recession
+* Remove deseased actors from actors list (there are a few)
 
 
 ## Final presentation
