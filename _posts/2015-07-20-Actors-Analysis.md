@@ -3,9 +3,9 @@ layout: post
 title: Actors Analysis
 ---
 
-My latest project at Metis sought to answer the following question: Do adverse economic conditions early in an actor's life influence his/her relative success in the future?
+My latest project at Metis sought to answer the following question: <b>Do adverse economic conditions early in an actor's life influence his/her relative success in the future?</b>
 
-Answer: (spoiler-ish alert) Probably not. I shall explain.
+Answer: Probably not. I shall explain.
 
 Thanks to my scrupulous efforts in <a href="http://cgerson.github.io/Webscraping/" target="_blank">webscraping</a>, I ended up with a nice, clean dataset of 617 observations. These were <b>617 unique actors</b>, all relatively successful given that they appeared on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo's actor list</a>.
 
@@ -15,7 +15,7 @@ My next step was to build a model to measure how the economy in the past affecte
 
 ### Building the model: success defined
 
-<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/oscarrace.jpg"/
+<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/oscarrace.jpg"/>
 
 I measured the actor's level of success by one metric: <b>the number of Oscar nominations received</b>.
 
@@ -30,11 +30,11 @@ To determine the health of the economy during various points in the actor's life
 Here is some interesting information I found in the data.
 
 * The average age of (contemporary) Oscar winners is 42
-<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Age_Osc.png"/
+<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Age_Osc.png"/>
 
 * Men and Oscar nominees have higher grossing films on average
-<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Avg_Gross_Sex_Osc.png"/
+<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Avg_Gross_Sex_Osc.png"/>
 
 * Oscar nominees endured more economic recessions on average
-<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Avg_Rec_pd_Osc.png"/
+<img style= "width: 600px; border:5px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Avg_Rec_pd_Osc.png"/>
 
