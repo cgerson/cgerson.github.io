@@ -14,7 +14,7 @@ Answer: Probably not.
 
 Thanks to my scrupulous efforts in <a href="http://cgerson.github.io/Webscraping/" target="_blank">webscraping</a>, I ended up with a nice, clean dataset of 617 observations. These were <b>617 unique actors</b>, all relatively successful given that they appeared on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo's people index</a>.
 
-However, studies have shown that young people who come of age in a recession tend to have <a href="http://www.epi.org/publication/bp243/" target="_blank">have bleaker career prospects in the long-term</a>. The <a href="http://cgerson.github.io/thanks/" target="_blank">Mothers of Aspiring Millennial Actors</a> organization contacted me, worried. How true could this be in Hollywood?, they asked.
+However, studies have shown that young people who come of age in a recession tend to have <a href="http://www.epi.org/publication/bp243/" target="_blank">bleaker career prospects</a> in the long-term. The <a href="http://cgerson.github.io/thanks/" target="_blank">Mothers of Aspiring Millennial Actors</a> organization contacted me, worried. How true could this be in Hollywood?, they asked.
 
 To find out, I created a model to measure how the economy in the past affected contemporary actors, and therefore have some sort of predictor for the millennials.
 
@@ -37,26 +37,27 @@ To determine the health of the economy during various points in the actor's life
 
 Some interesting information I pulled from the data.
 
-The average age of (contemporary) Oscar nominees is 42
+The average age of (contemporary) Oscar nominees is 42.
 
 <img style= "width: 500px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Age_Osc.png"/>
 
 
-Men and Oscar nominees have higher grossing films on average
+Men and Oscar nominees have higher grossing films on average.
 
 <img style= "width: 500px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Avg_Gross_Sex_Osc.png"/>
 
 
-Oscar nominees endured MORE economic recessions on average
+Oscar nominees endured MORE economic recessions on average.
 
 <img style= "width: 500px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/Avg_Rec_pd_Osc.png"/>
 
 
 ## Statistical findings: and the Oscar goes to...
 
-Running an ordinary least squares regression reveals that neither the length of the actor's career nor the age they begin acting has a strong effect on their success. More surprisingly is that the number of months in economic recessions between ages 20-25 has a positive, although slight, effect on success. When the going gets tough...? 
+Running an ordinary least squares regression reveals that neither the length of the actor's career nor the age they begin acting has a strong effect on their success. More surprisingly is that the number of months in economic recessions between ages 20-25 has a <b>positive</b>, although slight, effect on success. When the going gets tough...? 
 
 However, with an R-squared of .25, we can confidently conclude that something other than the career length, the gender, the age career begins, and the number of recessions in one's early life is influencing the actor's success. 
+
 
 ## Caveats
 
@@ -66,6 +67,7 @@ This dataset performed well for my purposes. However, accuracy in answering the 
 * Expand sample to include mid-level actors
 * Find salary information for actors, over time
 * Use continuous economic indicators to capture intensity of recession
+
 
 ## Final presentation
 
