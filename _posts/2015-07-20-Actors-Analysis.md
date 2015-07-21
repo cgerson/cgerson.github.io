@@ -3,9 +3,7 @@ layout: post
 title: Actors Analysis
 ---
 
-My latest project at Metis sought to answer the following question:
-
-<b>Do adverse economic conditions early in an actor's life influence his/her relative success in the future?</b>
+My latest project at Metis sought to answer the following question: <b>Do adverse economic conditions early in an actor's life influence his/her relative success in the future?</b>
 
 Answer: Probably not.
 
