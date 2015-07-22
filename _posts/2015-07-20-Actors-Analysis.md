@@ -12,7 +12,7 @@ Answer: Probably not.
 
 (No time for explanations? Skip to ppt presentation below)
 
-Thanks to my scrupulous efforts in <a href="http://cgerson.github.io/Webscraping/" target="_blank">webscraping</a>, I ended up with a nice, clean dataset of 617 observations. These were <b>617 unique actors</b>, all relatively successful given that they appeared on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo's people index</a>.
+Thanks to my scrupulous scraping efforts, documented <a href="http://cgerson.github.io/Webscraping/" target="_blank">in a previous blogpost</a>, I ended up with a nice, clean dataset of 617 observations. These were <b>617 unique actors</b>, all relatively successful in their field given that they appear on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo's people index</a>.
 
 However, studies have shown that young people who come of age in a recession tend to have <a href="http://www.epi.org/publication/bp243/" target="_blank">bleaker career prospects</a> in the long-term. The <a href="http://cgerson.github.io/thanks/" target="_blank">Mothers of Aspiring Millennial Actors</a> organization contacted me, worried. How true could this be in Hollywood?, they asked.
 
@@ -33,9 +33,7 @@ I began by trying to predict the average gross of films featuring said actor, bu
 To determine the health of the economy during various points in the actor's life, I used an <a href="https://research.stlouisfed.org/fred2/series/USREC" target="_blank">NBER-based recession indicator</a>. This dummy variable, measured monthly, assigns 1 to recessionary periods and 0 to expansionary periods. Using the actor's birthday, I could calculate the <b>number of recessionary months the actor was exposed to from ages 15-20 and 20-25</b>. (Here I am making the assumption that a US recession hits the global economy, in the case of foreign-born actors.) This measurement helps control for age, in that I am measuring the same length of time for every actor, regardless of age.
 
 
-## Early findings
-
-Some interesting information I pulled from the data.
+## Early findings: numbers behind the stars
 
 The average age of (contemporary) Oscar nominees is 42.
 
@@ -54,9 +52,9 @@ Oscar nominees endured MORE economic recessions on average.
 
 ## Statistical findings: and the Oscar goes to...
 
-Running an ordinary least squares regression reveals that neither the length of the actor's career nor the age they begin acting has a strong effect on their success. More surprisingly is that the number of months in economic recessions between ages 20-25 has a <b>positive</b>, albeit slight, effect on success. When the going gets tough...? 
+Running an ordinary least squares regression reveals that while an actor's starting age has no observable correlation with success, the length of their career does have a positive one.  More surprisingly is that the number of months in economic recessions between ages 20-25 has a very slight, but <b>positive</b>, correlation with success. When the going gets tough...? 
 
-However, with an R-squared of only .25, we can confidently conclude that something other than the career length, the gender, the age career begins, and the number of recessions in one's early life is influencing the actor's success. My model as is cannot account for the variability.
+However, with an R-squared of only .25, we can confidently conclude that something other than the actor's career length, gender, starting age, and the number of recessions in one's early life is contributing to their success in the industry. My model as is cannot account for the variability.
 
 
 ## Caveats
