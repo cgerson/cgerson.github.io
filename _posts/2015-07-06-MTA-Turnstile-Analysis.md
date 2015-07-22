@@ -7,7 +7,7 @@ The first project assigned to us at Metis was based on <a href="http://web.mta.i
 
 ![subway]({{ site.baseurl }}/images/Interested.png "Subway man")
 
-Our task was to help fictional group WTWY in their efforts to optimize their street team in collecting emails from interested parties, in hopes of raising awareness of their organization and eventually <b>maximizing participation and financial contributions</b>.
+Our task was to help <a href="http://cgerson.github.io/thanks/" target="_blank">group WTWY</a> in their efforts to optimize their street team in collecting emails from interested parties, in hopes of raising awareness of their organization and eventually <b>maximizing participation and financial contributions</b>.
 
 The turnstile data includes entry and exit counts for each subway station, measured in four hour intervals at inconsistent times. Required significant man-hours to clean and organize the data. 
 
