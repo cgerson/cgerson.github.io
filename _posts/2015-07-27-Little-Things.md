@@ -7,13 +7,14 @@ Python's <a href="https://pyformat.info/" target="_blank">formatting method</a> 
 
 The formatter responds to replacement fields surrounded by curly braces. Pass arguments to be replaced and ta-da, beauty. 
 
-You can even define your own formatting object. Here's an example that's 
+You can even define your own formatting object. Here's an example to help format one of life's most <a href="https://en.wikipedia.org/wiki/List_of_minor_The_Hitchhiker%27s_Guide_to_the_Galaxy_characters#Deep_Thought" target="_blank">difficult questions</a>:
 
     class DeepThought(object):
     	  def __format__(self, format):
 	      if (format == 'answer-to-ultimate-question'):
 	      	 return "42."
 	      return "What's the question?"
+	      
     print '{:answer-to-ultimate-question}'.format(DeepThought())
 
 42.
