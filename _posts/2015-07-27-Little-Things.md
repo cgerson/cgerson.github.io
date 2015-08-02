@@ -17,7 +17,8 @@ You can even define your own formatting object. Here's an example to help format
 	      
     print '{:answer-to-ultimate-question}'.format(DeepThought())
 <b></b>
-    42.
+
+	42.
 
 In sum,
 
@@ -25,5 +26,6 @@ In sum,
     adj = "real"
     print "Things just got {0}. And {1:0.0f} times prettier.".format(adj,num)
 <b></b>
-    Things just got real. And 100 times prettier.
+
+	Things just got real. And 100 times prettier.
 
