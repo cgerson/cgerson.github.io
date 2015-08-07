@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Adopt-a-Citibike: Prototype
+title: Adopt-a-Citibike, a prototype
 permalink: /adopt-a-bike/
 ---
 
