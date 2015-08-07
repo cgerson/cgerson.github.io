@@ -49,11 +49,6 @@ permalink: /adopt-a-bike-model/
       
       </style>
 
-<div id="example"></div>
-<div id="work_queues_chart" />
-<button id="update">Unbiased</button>
-<button id="update2">Biased</button>
-
     <script src="http://d3js.org/d3.v3.min.js"></script>
       <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
       <script src="{{site.basurl}}/js/embed-d3.js"></script>
@@ -217,5 +212,8 @@ d3.select('#update2')
 
 	
       </script>
-  </body>
-</html>
+
+<div id="example"></div>
+<div id="work_queues_chart" />
+<button id="update">Unbiased</button>
+<button id="update2">Biased</button>
