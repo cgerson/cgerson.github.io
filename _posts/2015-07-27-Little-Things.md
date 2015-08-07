@@ -3,7 +3,7 @@ layout: post
 title: Formatting the Little Things
 ---
 
-Python's <a href="https://pyformat.info/" target="_blank">formatting method</a> is my favorite code discovery of the week. And it's only Monday.
+Python's <a href="https://pyformat.info/" target="_blank">formatting method</a> is my favorite code discovery of the week. 
 
 The formatter responds to replacement fields surrounded by curly braces, enveloped in a string. Call the "format" method on the string, specifying which values to place inside those curly braces and ta-da, beauty. 
 
