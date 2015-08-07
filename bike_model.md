@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bike 21415's Journey
+title: Adopt-a-Citibike: Prototype
 permalink: /adopt-a-bike/
 ---
 
