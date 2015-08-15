@@ -117,6 +117,14 @@ img {
     font-size: 12px
 }
 
+figure, figcaption {
+
+display: block;
+font-style: italic;
+font-variant: small-caps;
+
+}
+
 // Smaller images
 img[alt="minipic"] { 
   max-width:  500px; 
