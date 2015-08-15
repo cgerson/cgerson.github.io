@@ -119,16 +119,8 @@ img {
     font-size: 12px
 }
 
-figure, figcaption {
-
-display: block;
-font-style: italic;
-font-variant: small-caps;
-
-}
-
 .caption {
-margin: 5px;
+margin: 10px;
 text-align: center;
 font-style: italic;
 font-size: 12px;
@@ -139,6 +131,7 @@ float: left;
 img[alt="minipic"] { 
   max-width:  500px; 
   display: block;
+  border:3px solid black;
 }
 
 // Fixes images in popup boxes from Google Translate
