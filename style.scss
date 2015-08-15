@@ -119,12 +119,19 @@ img {
     font-size: 12px;
 }
 
-.caption {
-margin: 10px;
-text-align: center;
-font-style: italic;
-font-size: 12px;
-float: left;
+div.figure {
+  float: right;
+  width: 30%;
+  border: 3px solid black;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+div.figure p {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
 }
 
 // Smaller images
