@@ -108,6 +108,8 @@ strong, b {
 
 img {
   max-width: 100%;
+  border:3px solid black;
+  margin: 0 auto;
 }
 
 .images div {
@@ -123,6 +125,14 @@ display: block;
 font-style: italic;
 font-variant: small-caps;
 
+}
+
+.caption {
+margin: 5px;
+text-align: center;
+font-style: italic;
+font-size: 12px;
+float: left;
 }
 
 // Smaller images
