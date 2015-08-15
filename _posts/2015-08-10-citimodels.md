@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Classifiers Citibike
+title: Classification models and Citibike
 ---
 
 Bikeshare programs around the country have seen varied levels of success. These programs, some developed publicly and others privately owned, have recently released their data in hopes that inspired and/or bored data-nerds will take an interest and analyze.
