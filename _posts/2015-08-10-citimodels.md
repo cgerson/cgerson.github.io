@@ -11,26 +11,27 @@ And I wanted in!
 
 ## CitiData
 
-This is the dataset belonging to the New York City bikeshare program, Citibike.
+The dataset I analyzed belongs to the New York City bikeshare program, Citibike.
 
 Each observation (row) is a bike trip from station A to station B. Other features include a timestamp, lat/long of stations, bike id, trip duration, and gender and birth year (if user was a subscriber).
 
-I looked concretely at three months of data: from Dec 1st 2014 until Feb 28th 2015. This data contained over 800 thousand bike trips, over five thousand unique bikes and 329 Citibike stations.
+I looked concretely at three months of data: from Dec 1st 2014 until Feb 28th 2015. This data contained over 800,000 bike trips, over 5,000 unique bikes and 329 Citibike stations.
 
 Data thoughts: Great dataset. Really clean. Some expected datatype conversions needed. Some bike trips passed the 24 hour mark, and a few users with birth years before 1900. Grandpas stealing bikes, no doubt.
 
 ## CitiFeatureExtraction
 
-So many bike going every which way! I wondered: <b>can I classify (predict) the destination neighborhood of the departing bike trip?</b>
+So many bikes going every which way! I wondered: <b>can I classify (predict) the destination neighborhood of the departing bike trip?</b>
 
 First I mapped each of the 329 bike stations to its legally defined neighborhood in Manhattan or Brooklyn with the following tools:
-* <a href="http://catalog.opendata.city/dataset/pediacities-nyc-neighborhoods/resource/91778048-3c58-449c-a3f9-365ed203e914" target="_blank">GeoJSON file of NYC bounderies</a>
-* station data provided by Citibike
-* CartoDB's <a href="http://docs.cartodb.com/tips-and-tricks.html#spatial-intersection-of-two-tables" target="_blank">SQL geographic join feature</a>, in which I could overlay the stations on the boundaries map and assign each station to its associated neighborhood.
+
+ * <a href="http://catalog.opendata.city/dataset/pediacities-nyc-neighborhoods/resource/91778048-3c58-449c-a3f9-365ed203e914" target="_blank">GeoJSON file of NYC bounderies</a>
+ * station data provided by Citibike
+ * CartoDB's <a href="http://docs.cartodb.com/tips-and-tricks.html#spatial-intersection-of-two-tables" target="_blank">SQL geographic join feature</a>, in which I could overlay the stations on the boundaries map and assign each station to its associated neighborhood.
 
 This way 329 stations could be reduced to 37 neighborhoods.
 
-I removed all non-subscribers (less than 3% of dataset) and could then <b>use the following features: starting neighborhood (1 of 37), time of day, day of the week, gender and birth year</b>.
+I removed all non-subscribers (less than 3% of dataset) to focus on one subgroup, and began to build my model using the following <b>features: starting neighborhood (1 of 37), time of day, day of the week, gender and birth year</b>.
 
 ## CitiClassificationModelling
 
@@ -40,16 +41,17 @@ In this <a href="http://cgerson.github.io/adopt-a-bike-model/" target="_blank">g
 
 ## CitiAdopt
 
-Why were we predicting the destination neighborhood again? Mainly to play with classification models, to be honest. The value of knowing where one user from point A ends up could be interesting for developing bike infrastructure along certain paths, but more suitable than a prediction model is a model of average traffic patters. Most users are commuters, and their commute is more or less constant.
+Why were we predicting the destination neighborhood again? Mainly to play with classification models, to be honest. The value of knowing where one user from point A ends up could be interesting for developing bike infrastructure along certain paths, but more suitable than a prediction model is a model of average traffic patterns.
 
 Therefore, I imagined creating an app for sponsors of the bikeshare program. These sponsors would adopt a bike with a contribution (something like when Kramer adopted that highway) and would interact with their bike via an app, which would allow the user to "predict" its route. Putting the "fun" back in fundraising.
 
 Here I created the app's <a href = "http://cgerson.github.io/adopt-a-bike/">proposed interface</a> showing:
+
 * the home screen: a map of NYC with the bike as a dot, hopping around, and
 * a notification of pickup: giving the sponsor 30 seconds to guess its destination
 
 ## CitiPowerpoint
 
-Check out the slides for graphs
+Check out the slides for graphs, further model explanation, and ideas for future analysis.
 
 <iframe src="//slides.com/claireger/deck-3/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
