@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Citimodels
+title: Classifiers Citibike
 ---
 
 Bikeshare programs around the country have seen varied levels of success. These programs, some developed publicly and others privately owned, have recently released their data in hopes that inspired and/or bored data-nerds will take an interest and analyze.
@@ -35,7 +35,7 @@ I removed all non-subscribers (less than 3% of dataset) to focus on one subgroup
 
 ## CitiClassificationModelling
 
-Predicting one of 37 classes is complicated with such sparse data: each trip began from only ONE of 37 points, ONE day of the week of 7, ONE gender, then birth year and starting time. Therefore, each trip had data for only 5 of 48 total features! My best models reached an average prediction accuracy of no more than .28 (out of 1).
+Predicting one of 37 classes is complicated with such sparse data: each trip began from only ONE of 37 points, ONE day of the week of 7, ONE gender, then birth year and starting time. Therefore, each trip had data for only 5 of 48 total features! My best model, fitted with randomized Decision Trees, reached an average prediction accuracy of no more than .28 (out of 1).
 
 In this <a href="http://cgerson.github.io/adopt-a-bike-model/" target="_blank">graph</a> we can see which features had the greatest relative importance in the model. 
 
