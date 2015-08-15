@@ -3,9 +3,13 @@ layout: post
 title: Classification models and Citibike
 ---
 
-Bikeshare programs around the country have seen varied levels of success. These programs, some developed publicly and others privately owned, have recently released their data in hopes that inspired and/or bored data-nerds will take an interest and analyze.
+Bikeshare programs around the country are pretty popular these days.
 
-<a href="http://www.citibikenyc.com/system-data" target="_blank">New York</a>, <a href="http://www.bayareabikeshare.com/datachallenge" target="_blank">Bay Area</a>, <a href="https://www.divvybikes.com/datachallenge" target="_blank">Chicago</a>, <a href="http://www.capitalbikeshare.com/system-data" target="_blank">Washington DC</a>, to name four, have opened up challenges. And, as hoped, some really cool people have produced some really cool things since the data release.
+<img style= "width: 600px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg"/>
+
+These programs, some developed publicly and others privately run, have recently released their data in hopes that inspired and/or bored data-nerds will take an interest and analyze.
+
+<a href="http://www.citibikenyc.com/system-data" target="_blank">New York</a>, <a href="http://www.bayareabikeshare.com/datachallenge" target="_blank">Bay Area</a>, <a href="https://www.divvybikes.com/datachallenge" target="_blank">Chicago</a>, <a href="http://www.capitalbikeshare.com/system-data" target="_blank">Washington DC</a>, to name four, have opened up challenges. And, as expected, some really cool people have produced some really cool things with the data.
 
 And I wanted in!
 
@@ -17,7 +21,7 @@ Each observation (row) is a bike trip from station A to station B. Other feature
 
 I looked concretely at three months of data: from Dec 1st 2014 until Feb 28th 2015. This data contained over 800,000 bike trips, over 5,000 unique bikes and 329 Citibike stations.
 
-Data thoughts: Great dataset. Really clean. Some expected datatype conversions needed. Some bike trips passed the 24 hour mark, and a few users with birth years before 1900. Grandpas stealing bikes, no doubt.
+Data thoughts: Great dataset. Really clean. Some expected datatype conversions needed. Some bike trips passed the 24 hour mark, and a few users with birth years before 1900. 
 
 ## CitiFeatureExtraction
 
@@ -43,7 +47,7 @@ In this <a href="http://cgerson.github.io/adopt-a-bike-model/" target="_blank">g
 
 Why were we predicting the destination neighborhood again? Mainly to play with classification models, to be honest. The value of knowing where one user from point A ends up could be interesting for developing bike infrastructure along certain paths, but more suitable than a prediction model is a model of average traffic patterns.
 
-Therefore, I imagined creating an app for sponsors of the bikeshare program. These sponsors would adopt a bike with a contribution (something like when <a href = "https://en.wikipedia.org/wiki/The_Pothole" target = "_blank">Kramer adopted that highway</a>) and would interact with their bike via an app, which would allow the user to "predict" its route. Putting the "fun" back in fundraising.
+Therefore, I imagined creating an app for sponsors of the bikeshare program. These sponsors would <b>adopt a bike</b> with a contribution (something like when <a href = "https://en.wikipedia.org/wiki/The_Pothole" target = "_blank">Kramer adopted that highway</a>) and would interact with their bike via an app, which would allow the user to "predict" its route. Putting the "fun" back in fundraising.
 
 Here I created the app's <a href = "http://cgerson.github.io/adopt-a-bike/">proposed interface</a> showing:
 
