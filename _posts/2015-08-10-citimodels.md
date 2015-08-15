@@ -11,9 +11,10 @@ These programs, some developed publicly and others privately run, have recently 
 
 And I wanted in!
 
-<div class = "caption"> 
-<img style= "width: 400px;" src="http://cgerson.github.io/images/citibike_foto_2.jpg" alt="Image"/>
-A man and his Citibike.</div>
+<div class = "figure">
+<p><img style= "width: 400px;" src="http://cgerson.github.io/images/citibike_foto_2.jpg" alt="Image"/>
+<p><br>A man and his Citibike.</div>
+</div>
 
 ## CitiData
 
