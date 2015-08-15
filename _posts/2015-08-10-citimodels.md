@@ -13,7 +13,7 @@ And I wanted in!
 
 <div class = "images">
 <img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg"/>
-<span><br>A man and his Citibike</span>
+<div><br>A man and his Citibike</div>
 </div>
 
 ## CitiData
