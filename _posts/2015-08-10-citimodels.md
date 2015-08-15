@@ -12,7 +12,7 @@ These programs, some developed publicly and others privately run, have recently 
 And I wanted in!
 
 <div class = "caption"> 
-<img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg" alt="Image"/>
+<img style= "width: 400px;" src="http://cgerson.github.io/images/citibike_foto_2.jpg" alt="Image"/>
 A man and his Citibike.</div>
 
 ## CitiData
