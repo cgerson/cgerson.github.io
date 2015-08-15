@@ -13,8 +13,9 @@ And I wanted in!
 
 <div class = "figure">
 <p><img style= "width: 400px;" src="http://cgerson.github.io/images/citibike_foto_2.jpg" alt="Image"/>
-<p><br>A man and his Citibike.</div>
+<p>A man and his Citibike.</div>
 </div>
+
 
 
 ## CitiData
