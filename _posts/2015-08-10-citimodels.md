@@ -5,7 +5,7 @@ title: Classification models and Citibike
 
 Bikeshare programs around the country are pretty popular these days.
 
-<img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg" align="middle"/>
+<div style="text-align: center;"><img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg"/></div>
 
 These programs, some developed publicly and others privately run, have recently released their data in hopes that inspired and/or bored data-nerds will take an interest and analyze.
 
