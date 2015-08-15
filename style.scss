@@ -134,6 +134,10 @@ div.figure p {
   text-indent: 0;
 }
 
+img.scaled {
+  width: 100%;
+}
+
 // Smaller images
 img[alt="minipic"] { 
   max-width:  500px; 
