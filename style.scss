@@ -110,6 +110,15 @@ img {
   max-width: 100%;
 }
 
+.images div {
+    width:100px;
+    text-align:center;
+}
+
+.images div span {
+    display:block;
+}
+
 // Smaller images
 img[alt="minipic"] { 
   max-width:  500px; 
