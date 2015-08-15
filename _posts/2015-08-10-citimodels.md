@@ -11,10 +11,11 @@ These programs, some developed publicly and others privately run, have recently 
 
 And I wanted in!
 
+<div style="text-align: center;">
 <figure>
-<div style="text-align: center;"><img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg"/></div>
+<img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg"/>
 </figcaption>A man and his Citibike</figcaption>
-</figure>
+</figure></div>
 
 ## CitiData
 
