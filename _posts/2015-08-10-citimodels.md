@@ -5,13 +5,16 @@ title: Classification models and Citibike
 
 Bikeshare programs around the country are pretty popular these days.
 
-<div style="text-align: center;"><img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg"/></div>
-
 These programs, some developed publicly and others privately run, have recently released their data in hopes that inspired and/or bored data-nerds will take an interest and analyze.
 
 <a href="http://www.citibikenyc.com/system-data" target="_blank">New York</a>, <a href="http://www.bayareabikeshare.com/datachallenge" target="_blank">Bay Area</a>, <a href="https://www.divvybikes.com/datachallenge" target="_blank">Chicago</a>, <a href="http://www.capitalbikeshare.com/system-data" target="_blank">Washington DC</a>, to name four, have opened up challenges. And, as expected, some really cool people have produced some really cool things with the data.
 
 And I wanted in!
+
+<figure>
+<div style="text-align: center;"><img style= "width: 400px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/citibike_foto_2.jpg"/></div>
+</figcaption>A man and his Citibike</figcaption>
+</figure>
 
 ## CitiData
 
