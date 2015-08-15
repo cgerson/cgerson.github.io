@@ -43,7 +43,7 @@ In this <a href="http://cgerson.github.io/adopt-a-bike-model/" target="_blank">g
 
 Why were we predicting the destination neighborhood again? Mainly to play with classification models, to be honest. The value of knowing where one user from point A ends up could be interesting for developing bike infrastructure along certain paths, but more suitable than a prediction model is a model of average traffic patterns.
 
-Therefore, I imagined creating an app for sponsors of the bikeshare program. These sponsors would adopt a bike with a contribution (something like when Kramer adopted that highway) and would interact with their bike via an app, which would allow the user to "predict" its route. Putting the "fun" back in fundraising.
+Therefore, I imagined creating an app for sponsors of the bikeshare program. These sponsors would adopt a bike with a contribution (something like when <a href = "https://en.wikipedia.org/wiki/The_Pothole" target = "_blank">Kramer adopted that highway</a>) and would interact with their bike via an app, which would allow the user to "predict" its route. Putting the "fun" back in fundraising.
 
 Here I created the app's <a href = "http://cgerson.github.io/adopt-a-bike/">proposed interface</a> showing:
 
