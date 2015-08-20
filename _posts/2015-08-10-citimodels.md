@@ -25,7 +25,7 @@ Each observation (row) is a bike trip from station A to station B. Other feature
 
 I looked concretely at three months of data: from Dec 1st 2014 until Feb 28th 2015. This data contained over 800,000 bike trips, over 5,000 unique bikes and 329 Citibike stations.
 
-Data thoughts: Great dataset. Really clean. Some expected datatype conversions needed. Some bike trips passed the 24 hour mark, and a few users with birth years before 1900. 
+Data thoughts: Great dataset. Really clean. Some expected datatype conversions needed. Some bike trips passed the 24 hour mark, and a few users with birth years before 1900. Only one conclusion there: 115 year-olds on joy rides.
 
 ## CitiFeatureExtraction
 
