@@ -5,13 +5,14 @@ title: Citbike Feed
 
 Some facts about me:
 
- * I am subletting in Brooklyn for the summer
+ * I'm subletting in Brooklyn for the summer
  * I work all day in the Flatiron District
  * I love biking
  * Riding the subway irritates me
- * Ergo, I'm thinking about becoming a member of the bikeshare program
 
-In sum, maybe Citibike membership is an option. But I didn't want to commit until I had <b>proof that a bike would be available to me at the specific times I would need one</b>.
+Ergo, I might be a perfect candidate for the Citibike bike share program.
+
+Yes, Citibike membership is an option. But I didn't want to commit until I had <b>proof that a bike would be available to me at the specific times I would need one</b>.
 
 So, I wrote a simple script to read Citibike's <a href = "https://www.citibikenyc.com/stations/json" target="_blank">system feed data</a> to understand the bike availability at specified stations. It will store selected data into a dictionary, then write the selected data into a csv file called "citibikedata.csv".
 
@@ -21,7 +22,8 @@ Note: This script is written to work in conjunction with crontabs, to load syste
 
 #### citibikefeed.py
 
-```import urllib, json
+```
+import urllib, json
 import pandas as pd
 from datetime import datetime
 import os.path
@@ -48,4 +50,5 @@ f = "citibikedata.csv"
 if os.path.isfile(f)==True:
     df.to_csv(f,mode="a",header=False)
 else:
-    df.to_csv(f,mode="w",header=True)```
+    df.to_csv(f,mode="w",header=True)
+```
