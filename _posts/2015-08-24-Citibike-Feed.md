@@ -60,12 +60,13 @@ On my remote server (where my citibikefeed.py file lives), I opened my crontab o
 ```
 $ crontab -e
 ```
+And added:
 
 ```
   */3 7,8 * * 1-5 python citibikefeed.py
 ```
 
-This means: run file every 3 minutes, from 7am to 8:59am, from Mon to Fri.
+This means: run my file every 3 minutes, from 7am to 8:59am, from Mon to Fri.
 
 After one day of running, I graphed my feed in iPython Notebook with seaborn:
 
@@ -83,4 +84,4 @@ g.set_xticklabels(rotation=90)
 g.set(title="Available bikes at selected stations")
 ```
 
-<img style= "width: 500px;" src="http://cgerson.github.io/images/availbikes.png">
+<img style= "width: 700px;" src="http://cgerson.github.io/images/availbikes.png">
