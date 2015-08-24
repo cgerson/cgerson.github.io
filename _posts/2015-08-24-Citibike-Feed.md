@@ -4,6 +4,7 @@ title: Citbike Feed
 ---
 
 Some facts about me:
+
  * I am subletting in Brooklyn for the summer
  * I work all day in the Flatiron District
  * I love biking
@@ -12,7 +13,7 @@ Some facts about me:
 
 In sum, maybe Citibike membership is an option. But I didn't want to commit until I had <b>proof that a bike would be available to me at the specific times I would need one</b>.
 
-So, I wrote a simple script to read Citibike's <a href = "https://www.citibikenyc.com/stations/json" target="_blank">system feed data</a> to understand the bike availability at specified stations. It will write the selected data into a csv file called "citibikedata.csv".
+So, I wrote a simple script to read Citibike's <a href = "https://www.citibikenyc.com/stations/json" target="_blank">system feed data</a> to understand the bike availability at specified stations. It will store selected data into a dictionary, then write the selected data into a csv file called "citibikedata.csv".
 
 Note: This script is written to work in conjunction with crontabs, to load system data automatically at specified times. That code will be copied below the python script.
 
@@ -47,6 +48,4 @@ f = "citibikedata.csv"
 if os.path.isfile(f)==True:
     df.to_csv(f,mode="a",header=False)
 else:
-    df.to_csv(f,mode="w",header=True)
-
-```
+    df.to_csv(f,mode="w",header=True)```
