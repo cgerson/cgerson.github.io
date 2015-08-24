@@ -14,7 +14,7 @@ Ergo, I might be a good candidate for the <a href="https://www.citibikenyc.com/"
 
 Yes, Citibike membership is an option. But I didn't want to commit until I had <b>proof that a bike would be available to me at the specific times I would need one</b>.
 
-So, I wrote a simple python script on my remote server to read Citibike's <a href = "https://www.citibikenyc.com/stations/json" target="_blank">system feed data</a> to understand the bike availability at specified stations. It stores selected data into a dictionary, then writes the selected data into a csv file called "citibikedata.csv".
+So, I wrote a simple python script on my remote server to read Citibike's <a href = "https://www.citibikenyc.com/stations/json" target="_blank">system feed data</a> to understand the bike availability at specified stations. It stores selected data into a dictionary (station name, available bikes, available docks, current time), then writes the selected data into a csv file called "citibikedata.csv".
 
 Note: This script is written to work in conjunction with crontabs, to load system data automatically at specified times. Find that code below the python script.
 
@@ -53,7 +53,7 @@ else:
     df.to_csv(f,mode="w",header=True)
 ```
 
-Now, this feed grabs data at the current time. But I would need the bike sometime around 8am, every weekday. Let's set up a cronjob to run this script every 3 minutes from 7am to 9am.
+Now, this feed grabs data at the current time. But I would need the bike sometime around 8am, every weekday. Let's set up a cronjob to run this script between 7am and 9am.
 
 On my remote server (where my citibikefeed.py file lives), I opened my crontab on the command line:
 
@@ -86,3 +86,5 @@ g.set(title="Available bikes at selected stations")
 ```
 
 <img style= "width: 780px;" src="http://cgerson.github.io/images/availbikes.png">
+
+This script can easily be expanded to include dock availability at destination station, as well as available docks at your neighborhood station for the return journey.
