@@ -18,7 +18,7 @@ So, I wrote a simple python script on my remote server to read Citibike's <a hre
 
 Note: This script is written to work in conjunction with crontabs, to load system data automatically at specified times. Find that code below the python script.
 
-<i>Make it your own:</i> Modify the <b>my_stations</b> variable to include any stations you are interested in tracking. Find station names <a href="https://member.citibikenyc.com/map/" target="_blank">here.</a>
+<i>Make it your own:</i> Modify the "mystations" variable to include any stations you are interested in tracking. Find station names <a href="https://member.citibikenyc.com/map/" target="_blank">here.</a>
 
 #### citibikefeed.py
 
@@ -32,7 +32,7 @@ url = "https://www.citibikenyc.com/stations/json"
 response = urllib.urlopen(url)
 data = json.loads(response.read())
 
-my_stations = ["Fulton St & Washington Ave","Fulton St & Grand Ave",
+mystations = ["Fulton St & Washington Ave","Fulton St & Grand Ave",
                "Fulton St & Clermont Ave","Lefferts Pl & Franklin Ave"]
 
 d={'name':[],'docks':[],'bikes':[],'time':[]}
