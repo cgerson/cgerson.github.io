@@ -70,13 +70,14 @@ This means: run my file every 3 minutes, from 7am to 8:59am, from Mon to Fri.
 
 After one day of running, I graphed my feed in iPython Notebook with seaborn:
 
+#### citibikegraph.ipynb
 ```
 import pandas as pd
 import matplotlib.pyplot as plt
 %matplotlib inline
 import seaborn as sns
 
-df = pd.read_csv("citibikefeed.csv")
+df = pd.read_csv("citibikefeed.csv") 
 del df['Unnamed: 0']
 
 g = sns.factorplot(x="time", y="bikes", hue="name", data=df,aspect = 2,size=6)
@@ -84,4 +85,4 @@ g.set_xticklabels(rotation=90)
 g.set(title="Available bikes at selected stations")
 ```
 
-<img style= "width: 700px;" src="http://cgerson.github.io/images/availbikes.png">
+<img style= "width: 780px;" src="http://cgerson.github.io/images/availbikes.png">
