@@ -87,4 +87,6 @@ g.set(title="Available bikes at selected stations")
 
 <img style= "width: 780px;" src="http://cgerson.github.io/images/availbikes.png">
 
-This script can easily be expanded to include dock availability at destination station, as well as available docks at your neighborhood station for the return journey.
+Great! Bikes galore.
+
+<i>Next steps:</i> This script can easily be expanded to include dock availability at destination station, as well as available docks at your neighborhood station for the return journey.
