@@ -52,3 +52,35 @@ if os.path.isfile(f)==True:
 else:
     df.to_csv(f,mode="w",header=True)
 ```
+
+Now, this feed grabs data at the current time. But I would need the bike sometime around 8am, every weekday. Let's set up a cronjob to run this script every 3 minutes from 7am to 9am.
+
+On my remote server (where my citibikefeed.py file lives), I opened my crontab on the command line:
+
+```
+$ crontab -e
+```
+
+```
+  */3 7,8 * * 1-5 python citibikefeed.py
+```
+
+This means: run file every 3 minutes, from 7am to 8:59am, from Mon to Fri.
+
+After one day of running, I graphed my feed in iPython Notebook with seaborn:
+
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+
+df = pd.read_csv("citibikefeed.csv")
+del df['Unnamed: 0']
+
+g = sns.factorplot(x="time", y="bikes", hue="name", data=df,aspect = 2,size=6)
+g.set_xticklabels(rotation=90)
+g.set(title="Available bikes at selected stations")
+```
+
+<img style= "width: 500px;" src="http://cgerson.github.io/images/availbikes.png">
