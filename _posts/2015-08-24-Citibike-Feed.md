@@ -73,12 +73,10 @@ After one day of running, I <b>plotted my feed</b> in iPython Notebook with seab
 #### citibikegraph.ipynb
 ```
 import pandas as pd
-import matplotlib.pyplot as plt
 %matplotlib inline
 import seaborn as sns
 
-df = pd.read_csv("citibikefeed.csv") 
-del df['Unnamed: 0']
+df = pd.read_csv("citibikefeed.csv")
 
 g = sns.factorplot(x="time", y="bikes", hue="name", data=df,aspect = 2,size=6)
 g.set_xticklabels(rotation=90)
