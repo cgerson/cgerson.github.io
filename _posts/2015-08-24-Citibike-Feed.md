@@ -18,7 +18,7 @@ So, I wrote a simple python script on my remote server to read Citibike's <a hre
 
 Note: This script is written to work in conjunction with crontabs, to load system data automatically at specified times. Find that code below the python script.
 
-<i>Make it your own:</i> Modify the "my_stations" variable to include any stations you are interested in tracking.
+<i>Make it your own:</i> Modify the "my_stations" variable to include any stations you are interested in tracking. Find station names <a href="https://member.citibikenyc.com/map/" target="_blank">here.</a>
 
 #### citibikefeed.py
 
