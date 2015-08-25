@@ -18,7 +18,7 @@ So, I wrote a simple python script on my remote server to read Citibike's <a hre
 
 The key here is to work in conjunction with <a href="http://www.adminschoice.com/crontab-quick-reference" target="_blank">crontabs</a>, which will run my code in the background at specified times. Find that code below the python script.
 
-<i>Make it your own:</i> Modify the 'my_stations' variable to include any stations you are interested in tracking. Find station names <a href="https://member.citibikenyc.com/map/" target="_blank">here.</a>
+<i>Make it your own:</i> Modify the ```my_stations``` variable to include any stations you are interested in tracking. Find station names <a href="https://member.citibikenyc.com/map/" target="_blank">here.</a>
 
 #### citibikefeed.py
 
