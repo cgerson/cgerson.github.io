@@ -3,22 +3,22 @@ layout: post
 title: Evaluating Citibike as a commuting option
 ---
 
-Some facts about me:
+Or, how to write code to grab information so you don't have to. 
+
+Here are some facts about me:
 
  * I'm subletting in Brooklyn for the summer
  * I work all day in the Flatiron District
  * I love biking
  * Riding the subway irritates me
 
-Ergo, I might be a good candidate for the <a href="https://www.citibikenyc.com/" target="_blank">Citibike bike share program.</a>
-
-Yes, Citibike membership is an option. But I didn't want to commit until I had <b>proof that a bike would be available to me at the specific times I would need one</b>.
+Ergo, I might be a good candidate for the <a href="https://www.citibikenyc.com/" target="_blank">Citibike bike share program.</a> However, I didn't want to commit until I had <b>proof that a bike would be available to me at the specific times I would need one</b>.
 
 So, I wrote a simple python script on my remote server to read Citibike's <a href = "https://www.citibikenyc.com/stations/json" target="_blank">system feed data</a> to understand the bike availability at specified stations. It stores selected data into a dictionary (station name, available bikes, available docks, current time), then writes the selected data into a csv file called "citibikedata.csv".
 
-Note: This script is written to work in conjunction with crontabs, to load system data automatically at specified times. Find that code below the python script.
+The key here is to work in conjunction with <a href="http://www.adminschoice.com/crontab-quick-reference" target="_blank">crontabs</a>, which will run my code in the background at specified times. Find that code below the python script.
 
-<i>Make it your own:</i> Modify the "mystations" variable to include any stations you are interested in tracking. Find station names <a href="https://member.citibikenyc.com/map/" target="_blank">here.</a>
+<i>Make it your own:</i> Modify the 'my_stations' variable to include any stations you are interested in tracking. Find station names <a href="https://member.citibikenyc.com/map/" target="_blank">here.</a>
 
 #### citibikefeed.py
 
@@ -32,7 +32,7 @@ url = "https://www.citibikenyc.com/stations/json"
 response = urllib.urlopen(url)
 data = json.loads(response.read())
 
-mystations = ["Fulton St & Washington Ave","Fulton St & Grand Ave",
+my_stations = ["Fulton St & Washington Ave","Fulton St & Grand Ave",
                "Fulton St & Clermont Ave","Lefferts Pl & Franklin Ave"]
 
 d={'name':[],'docks':[],'bikes':[],'time':[]}
