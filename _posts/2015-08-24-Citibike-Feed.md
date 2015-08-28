@@ -3,7 +3,7 @@ layout: post
 title: Evaluating Citibike as a commuting option
 ---
 
-Or, how to write code to grab information so you don't have to. 
+Or, how to take advantage of cron jobs and run code automatically.
 
 Here are some facts about me:
 
