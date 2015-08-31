@@ -1,3 +1,9 @@
+---
+layout: page
+title: CV
+permalink: /cv/
+---
+
 CLAIRE GERSON
 
 653 Washington Ave, Apt 2F, Brooklyn, NY  |  512.587.4954  |   [http://cgerson.github.io](http://cgerson.github.io/)  |   [clairegerson@gmail.com](mailto:clairegerson@gmail.com)
