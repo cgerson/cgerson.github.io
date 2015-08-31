@@ -6,8 +6,11 @@ permalink: /cv/
 ###CLAIRE GERSON
 
 > 653 Washington Ave, Apt 2F, Brooklyn, NY
+
 > 512.587.4954
+
 > [http://cgerson.github.io](http://cgerson.github.io/)
+
 > [clairegerson@gmail.com](mailto:clairegerson@gmail.com)
 
 
@@ -19,7 +22,8 @@ _Master's degree in Economics_ GPA: 3.75/4.0, Magna cum Laude
 
 _Bachelor's degree in Economics_, _Minor in Business Administration & Management_
 
--_Relevant coursework_: Statistics, Econometrics, Microeconomic and Macroeconomic Theory, Economics of Information, Financial & Managerial Accounting, Introduction to Law
+- _Relevant coursework_: Statistics, Econometrics, Microeconomic and Macroeconomic Theory, Economics of Information, Financial & Managerial Accounting, Introduction to Law
+
 - Named to the Dean's List, 2006-2010
 
 ###EXPERIENCE:
@@ -38,7 +42,7 @@ _Accounting Assistant and Executive Assistant to CEO Martin Varsavsky_
 - Managed personal and professional logistics of tech entrepreneur and Fon CEO Martin Varsavsky. Responsible for scheduling as well as blog editing/maintenance, investment research and cost analysis for various projects.
 - Prepared extensive personal expense reports. Designed graphics and identified areas to cut costs.
 
-**University of Granada, Faculty of Economics and Business,** Granada,Spain                11/2011-5/2012
+**University of Granada, Faculty of Economics and Business,** Granada, Spain                11/2011-5/2012
 
 _Research Assistant in the Applied Economics Department, Professor Juan Delgado Alaminos_
 
