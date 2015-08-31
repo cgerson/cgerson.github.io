@@ -1,21 +1,17 @@
 ---
 layout: page
-title: CV
 permalink: /cv/
 ---
 
-CLAIRE GERSON
+###CLAIRE GERSON
 
-653 Washington Ave, Apt 2F, Brooklyn, NY
-
-512.587.4954
-
-[http://cgerson.github.io](http://cgerson.github.io/)
-
-[clairegerson@gmail.com](mailto:clairegerson@gmail.com)
+> 653 Washington Ave, Apt 2F, Brooklyn, NY
+> 512.587.4954
+> [http://cgerson.github.io](http://cgerson.github.io/)
+> [clairegerson@gmail.com](mailto:clairegerson@gmail.com)
 
 
-EDUCATION:
+###EDUCATION:
 
 **Boston University,** Boston, MA                                                                9/2006 -5/2010
 
@@ -26,7 +22,7 @@ _Bachelor's degree in Economics_, _Minor in Business Administration & Management
 -_Relevant coursework_: Statistics, Econometrics, Microeconomic and Macroeconomic Theory, Economics of Information, Financial & Managerial Accounting, Introduction to Law
 - Named to the Dean's List, 2006-2010
 
-EXPERIENCE:
+###EXPERIENCE:
 
 **Metis,** New York, NY                                                                        6/2015-9/2015
 
@@ -61,7 +57,7 @@ Research Assistant in the Business Policy & Law Department, Professor David Weil
 - Conducted extensive online and library research on the effects of management structure on labor-law compliance in the hospitality industry; presented detailed research to investigation team.
 - Assisted in creating the "Strategic enforcement" publication that was designed for and presented to the US Department of Labor.
 
-SKILLS:
+###SKILLS:
 
 _Development:_  Python, Java, Javascript, HTML, Git, Github.
 
