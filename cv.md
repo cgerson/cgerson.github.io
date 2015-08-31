@@ -30,7 +30,7 @@ _Bachelor's degree in Economics_, _Minor in Business Administration & Management
 
 **Metis,** New York, NY                                                                        6/2015-9/2015
 
-Data Science Fellow
+_Data Science Fellow
 
 - 12-week fellowship focused on enhancing skills used in the data science industry.
 - Through five data projects, Metis teaches and reinforces concepts such as statistical inference, data acquisition, supervised and unsupervised learning, d3.js, SQL and NoSQL databases, and Hadoop MapReduce.ÃÂ
@@ -50,13 +50,13 @@ _Research Assistant in the Applied Economics Department, Professor Juan Delgado 
 
 **Ministry of Education, Junta de Andalucía,** Granada, Spain                                10/2010-5/2012
 
-Conversation and Language assistant
+_Conversation and Language assistant
 
 - English and science classes in city primary school (C.E.I.P. Vicente Aleixandre). Included lesson planning support as well as advanced instruction for teachers. 
 
 **Boston University School of Management,** Boston, MA                                        1/2009-8/2010
 
-Research Assistant in the Business Policy & Law Department, Professor David Weil
+_Research Assistant in the Business Policy & Law Department, Professor David Weil
 
 - Conducted extensive online and library research on the effects of management structure on labor-law compliance in the hospitality industry; presented detailed research to investigation team.
 - Assisted in creating the "Strategic enforcement" publication that was designed for and presented to the US Department of Labor.
