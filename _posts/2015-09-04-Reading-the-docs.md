@@ -6,7 +6,7 @@ title: Reading the docs
 ####What I'm doing:
 Reformatting dates ranging from early 1900's until now, using Python's datetime.strptime method. Straightforward.
 
-####What I saw afterwards:
+####What I saw upon inspection:
 I find that I've lost all dates before 1969. Noooo!
 
 ####What I thought happened:
@@ -23,3 +23,4 @@ Sometimes (always) it's a good idea to reference the documentation of modules wh
 
 ####Also:
 Dates are a pain.
+
