@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /projects/
+permalink: /apps/
 ---
 
 ###Projects
