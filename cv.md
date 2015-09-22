@@ -5,7 +5,6 @@ permalink: /cv/
 
 ###CLAIRE GERSON
 
-> [http://cgerson.github.io](http://cgerson.github.io/)
 > [clairegerson[at]gmail.com](mailto:clairegerson@gmail.com)
 
 
@@ -28,7 +27,7 @@ _Bachelor's degree in Economics_, _Minor in Business Administration & Management
 _Data Science Fellow_
 
 - 12-week fellowship focused on enhancing skills used in the data science industry.
-- Through five data projects, Metis teaches and reinforces concepts such as statistical inference, data acquisition, supervised and unsupervised learning, d3.js, SQL and NoSQL databases, and Hadoop MapReduce.ÃÂ
+- Through five data projects, Metis teaches and reinforces concepts such as statistical inference, data acquisition, supervised and unsupervised learning, d3.js, SQL and NoSQL databases, and Hadoop MapReduce.
 
 **Fon Technology,** Madrid, Spain                                                                8/2012-10/2014
 
@@ -66,4 +65,4 @@ _Languages:_  English (Native speaker), Spanish (Fluent), Hebrew (Basic).
 
 _Intangibles:_ Organized, analytical, detail-oriented, and self-motivated.
 
-_Other Interests:_ Analyzing the world from an economist's perspective.
+_Other Interests:_ Rereading <i>Hitchhiker's Guide to the Galaxy</i> for life tips
