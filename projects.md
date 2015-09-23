@@ -5,11 +5,9 @@ permalink: /projects/
 
 #Projects
 
-##Apps
-
 ###<a href = "http://ufosho.herokuapp.com/" target="_blank">ufosho.herokuapp.com</a>
 
-<b>About</b>: Queries UFO sightings database to find similar sightings based on certain criteria.
+<b>About</b>: Queries UFO sightings database to find similar sightings. Visualizes sightings trends over the past century.
 
 <b>Github</b>: <a href = "https://github.com/cgerson/ufo-sightings-analysis" target="_blank">github.com/cgerson/ufo-sightings-analysis</a>
 <br><br>
