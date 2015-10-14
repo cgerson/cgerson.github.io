@@ -21,4 +21,4 @@ permalink: /projects/
 
 ###<a href = "http://twittyre.herokuapp.com/" target="_blank">twittyre.herokuapp.com</a>
 
-<b>About</b>: Measures sentiment analysis of tweets of any twitter handle
+<b>About</b>: Measures sentiment of tweets of any twitter handle
