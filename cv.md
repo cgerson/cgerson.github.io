@@ -6,6 +6,7 @@ permalink: /cv/
 ###CLAIRE GERSON
 
 > [clairegerson[at]gmail.com](mailto:clairegerson@gmail.com)
+> [github.com/cgerson](http://www.github.com/cgerson)
 
 
 ###EDUCATION:
