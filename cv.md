@@ -58,7 +58,7 @@ _Research Assistant in the Business Policy & Law Department, Professor David Wei
 
 ###SKILLS:
 
-_Development:_  Python, Java, Javascript, HTML, Git, Github.
+_Development:_  Python, Java, Javascript, HTML, Git, Github, Flask.
 
 _Data:_ PostgreSQL, MongoDB, Pandas, Numpy, Scikit-Learn, d3.js.
 
