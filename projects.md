@@ -22,3 +22,6 @@ permalink: /projects/
 ###<a href = "http://twittyre.herokuapp.com/" target="_blank">twittyre.herokuapp.com</a>
 
 <b>About</b>: Measures sentiment of tweets of any twitter handle
+
+<b>Github</b>: <a href = "https://github.com/cgerson/twittyre" target="_blank">github.com/cgerson/twittyre</a>
+<br><br>
