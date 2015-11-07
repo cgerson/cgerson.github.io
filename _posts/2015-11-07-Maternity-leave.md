@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maternity leave
+title: Maternity Leave by Industry
 ---
 
 How many weeks of maternity leave do US industries offer their employees?

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Evaluating Citibike as a commuting option
+title: Evaluating Citibike as a Commuting Option
 ---
 
 Or, how to take advantage of cron jobs and run code automatically.
