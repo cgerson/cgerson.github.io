@@ -12,6 +12,7 @@ This is a great example of important data that is not made public by companies o
 The code used to scrape and clean the data lives in this <a href = "https://github.com/cgerson/maternity-leave" target="_blank">GitHub repo</a>. The main tools used were BeautifulSoup (to scrape) and pandas (to manipulate the data).
 
 Here's the gist:
+
 ```
 # generate BeautifulSoup object 
 url = "https://fairygodboss.com/maternity-leave-resource-center"
@@ -37,4 +38,6 @@ for line in soup.findAll('a',attrs = {'class':'comp_page'}):
 df = pd.DataFrame(collect_cos, columns = ['company','industry','paid','unpaid'])
 ```
 
+Plotting the average leave offered by industry (sorted by paid leave):
 
+<iframe src="http://bl.ocks.org/cgerson/raw/05c7b3001804dffbab14/" frameborder="0" height="500" marginheight="0" marginwidth="0" scrolling="no" width="1000"></iframe>
