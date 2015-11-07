@@ -40,4 +40,4 @@ df = pd.DataFrame(collect_cos, columns = ['company','industry','paid','unpaid'])
 
 Plotting the average leave offered by industry (sorted by paid leave):
 
-<iframe src="http://bl.ocks.org/cgerson/raw/05c7b3001804dffbab14/" frameborder="0" height="500" marginheight="0" marginwidth="0" scrolling="no" width="1000"></iframe>
+<iframe src="http://bl.ocks.org/cgerson/raw/05c7b3001804dffbab14/" frameborder="0" height="450" marginheight="0" marginwidth="0" scrolling="no" width="900"></iframe>
