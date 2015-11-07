@@ -5,7 +5,7 @@ title: Maternity leave
 
 How many weeks of maternity leave do US industries offer their employees?
 
-The website <a href = "https://fairygodboss.com/maternity-leave-resource-center" target="_blank">Fairygodboss</a> hosts a crowdsourced collection of maternity leave information. Each observation may include the name of the company, the industry, and the number of paid and unpaid leave (in weeks) that the company offers.
+The website <a href = "https://fairygodboss.com/maternity-leave-resource-center" target="_blank">Fairygodboss</a> hosts a crowdsourced collection of maternity leave information. Each observation may include the name of the company, the industry, and the amount of paid and unpaid leave (in weeks) that the company offers.
 
 This is a great example of important data that is not made public by companies or, if public, is fragmented. With crowdsourcing, individuals from disparate parts of the economy can come together and create a powerful and telling database. Yeehaw!
 
@@ -37,6 +37,8 @@ for line in soup.findAll('a',attrs = {'class':'comp_page'}):
 # create pandas dataframe object
 df = pd.DataFrame(collect_cos, columns = ['company','industry','paid','unpaid'])
 ```
+
+Currently there are <b>727 data points</b> from <b>37 industries</b>. More information to come on amount of observations per industry (in the meantime, check out the iPython notebook in the repo).
 
 Plotting the average leave offered by industry (sorted by paid leave):
 
