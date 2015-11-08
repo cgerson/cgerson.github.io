@@ -40,6 +40,6 @@ df = pd.DataFrame(collect_cos, columns = ['company','industry','paid','unpaid'])
 
 Currently there are <b>727 data points</b> from <b>37 industries</b>. More information to come on amount of observations per industry (in the meantime, check out the iPython notebook in the repo).
 
-Plotting the average leave offered by industry (sorted by paid leave):
+Plotting the average leave offered by industry:
 
 <iframe src="http://bl.ocks.org/cgerson/raw/05c7b3001804dffbab14/" frameborder="0" height="500" marginheight="0" marginwidth="0" scrolling="yes" width="1000"></iframe>
