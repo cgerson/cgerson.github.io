@@ -38,7 +38,7 @@ for line in soup.findAll('a',attrs = {'class':'comp_page'}):
 df = pd.DataFrame(collect_cos, columns = ['company','industry','paid','unpaid'])
 ```
 
-Currently there are <b>727 data points</b> from <b>37 industries</b>. More information to come on amount of observations per industry (in the meantime, check out the iPython notebook in the repo).
+Currently there are <b>772 companies</b> from <b>37 industries</b> (lastest update: Nov 16, 2015). More information to come on amount of observations per industry (in the meantime, check out the iPython notebook in the repo).
 
 Plotting the average leave offered by industry:
 
