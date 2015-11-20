@@ -9,7 +9,7 @@ The website <a href = "https://fairygodboss.com/maternity-leave-resource-center"
 
 This is a great example of important data that is not made public by companies or, if public, is fragmented. With crowdsourcing, individuals from disparate parts of the economy can come together and create a powerful and telling database. Yeehaw!
 
-The code used to scrape and clean the data lives in this <a href = "https://github.com/cgerson/maternity-leave" target="_blank">GitHub repo</a>. The main tools used were BeautifulSoup (to scrape) and pandas (to manipulate the data).
+The code used to scrape and clean the data lives in this <a href = "https://github.com/cgerson/maternity-leave" target="_blank">GitHub repo</a>. The tools used were <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> (to scrape), <a href="http://pandas.pydata.org/">Pandas</a> (to manipulate the data) and some experiments with plotly (plotting).
 
 Currently there are <b>805 companies</b> from <b>40 industries</b> (lastest update: Nov 20, 2015).
 
