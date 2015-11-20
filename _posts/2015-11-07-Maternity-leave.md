@@ -44,4 +44,4 @@ Plotting the average leave offered by industry:
 
 <iframe src="http://bl.ocks.org/cgerson/raw/05c7b3001804dffbab14/" frameborder="0" height="500" marginheight="0" marginwidth="0" scrolling="yes" width="1000"></iframe>
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/27.embed"></iframe>
+<iframe width="650" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/27.embed"></iframe>
