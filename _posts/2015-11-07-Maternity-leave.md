@@ -42,4 +42,4 @@ Currently there are <b>805 companies</b> from <b>40 industries</b> (lastest upda
 
 Plotting the average leave offered by industry:
 <br>
-<iframe width="650" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/35.embed"></iframe>
+<iframe width="700" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/35.embed"></iframe>
