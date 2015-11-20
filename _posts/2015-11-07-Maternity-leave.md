@@ -40,6 +40,12 @@ df = pd.DataFrame(collect_cos, columns = ['company','industry','paid','unpaid'])
 
 Currently there are <b>805 companies</b> from <b>40 industries</b> (lastest update: Nov 20, 2015).
 
+Average paid leave in weeks over all companies submitted is <b>8.1 weeks</b>. Average unpaid leave is <b>9.3 weeks</b>.
+
+Two outliers in this sample, <b>Bill and Melinda Gates Foundation</b> (Nonprofit) and <b>Netflix</b> (Technology), offer 52 weeks of paid maternity leave. 
+
+The 20 companies with industry "Unspecified" (including Smucker's, Petsmart and Texas Children's Hospital) should be separated into their corresponding industry bucket -- on the to-do list.
+
 Plotting the average leave offered by industry:
-<br>
+<br><br>
 <iframe width="750" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/48.embed"></iframe>
