@@ -38,10 +38,8 @@ for line in soup.findAll('a',attrs = {'class':'comp_page'}):
 df = pd.DataFrame(collect_cos, columns = ['company','industry','paid','unpaid'])
 ```
 
-Currently there are <b>805 companies</b> from <b>40 industries</b> (lastest update: Nov 20, 2015). More information to come on amount of observations per industry (in the meantime, check out the iPython notebook in the repo).
+Currently there are <b>805 companies</b> from <b>40 industries</b> (lastest update: Nov 20, 2015).
 
 Plotting the average leave offered by industry:
-
-<iframe src="http://bl.ocks.org/cgerson/raw/05c7b3001804dffbab14/" frameborder="0" height="500" marginheight="0" marginwidth="0" scrolling="yes" width="1000"></iframe>
-
-<iframe width="650" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/27.embed"></iframe>
+<br>
+<iframe width="650" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/35.embed"></iframe>
