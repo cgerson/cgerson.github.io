@@ -13,12 +13,13 @@ The code used to scrape and clean the data lives in this <a href = "https://gith
 
 Currently the dataset includes <b>825 companies</b> from <b>42 industries</b> (lastest update: Nov 23, 2015).
 
-Average paid leave in weeks over all companies submitted is <b>8.1 weeks</b>.
+Average <b>paid leave</b> in weeks over all companies submitted is <b>8.1 weeks</b>.
 
-Average unpaid leave is <b>9 weeks</b>.
+Average <b>paid leave</b> is <b>9 weeks</b>.
 
 Two outliers in this sample, <b>Bill and Melinda Gates Foundation</b> (Nonprofit) and <b>Netflix</b> (Technology), offer 52 weeks of paid maternity leave. 
 
 Plotting the average leave offered by industry:
+(Note that companies that offer 0 weeks for either paid or unpaid are noted below. Otherwise only information currently available is displayed.)
 <br><br>
 <iframe width="750" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/60.embed"></iframe>
