@@ -11,7 +11,7 @@ This is a great example of important data that is not made public by companies o
 
 The code used to scrape and clean the data lives in this <a href = "https://github.com/cgerson/maternity-leave" target="_blank">GitHub repo</a>. The tools used were <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> (to scrape), <a href="http://pandas.pydata.org/">Pandas</a> (to manipulate the data) and some experiments with plotly (plotting).
 
-Currently the dataset includes <b>891 companies</b> from <b>42 industries</b> (lastest update: December 01, 2015).
+Currently the dataset includes <b>891 companies</b> from <b>42 industries</b> (latest update: December 01, 2015).
 
 Average <b>paid leave</b> in weeks over all companies submitted is <b>8.0 weeks</b>.
 
@@ -22,4 +22,4 @@ Two outliers in this sample, <b>Bill and Melinda Gates Foundation</b> (Nonprofit
 Plotting the average leave offered by industry:<br>
 (Note that companies that offer 0 weeks for either paid or unpaid are noted below. Otherwise only information currently available is displayed.)
 <br><br>
-<iframe width="750" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/66.embed"></iframe>
+<iframe width="750" height="900" frameborder="0" scrolling="no" src="https://plot.ly/~cgerson/60.embed"></iframe>
