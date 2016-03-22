@@ -30,4 +30,4 @@ Let's say I want to **subset the data by year**. There are a few ways to do this
 
 The resulting `year_subsets` is a dictionary whose keys are years (2013, 2014, 2015) and whose values are DataFrames of rows from said year. For example, `year_subsets['2014']` returns a DataFrame object.
 
-There are alternative ways to subset data in pandas, but this is the only one-liner I've seen that returns the data in the original format with its original indices.
+There are alternative ways to subset data in pandas, but this is the only one-liner I've seen that returns the data in its original format, with its original indices.
