@@ -17,14 +17,13 @@ Here goes.
 
 **Groupby solution**: Create a dictionary from the GroupBy object!
 
-###Example:
+###Example: Unemployment data from Spain, by year (2013-2015) and quartile (1-4).
 
-* Unemployment data from Spain, by year (2013-2015) and quartile (1-4).
 Here are the first 10 rows:
 
-<img style= "width: 300px; border:3px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/spain_data.jpg"/>
+<img style= "width: 300px; border:1px solid black; margin: 0 auto;" src="http://cgerson.github.io/images/spain_data.png"/>
 
-Let's say I want to subset the data by year. There are a few ways to do this in pandas, but with GroupBy... ONE ELEGANT LINE:
+Let's say I want to **subset the data by year**. There are a few ways to do this in pandas, but with GroupBy... ONE ELEGANT LINE:
 
 `year_subsets = dict(list(new_df.groupby('Year')))`
 
