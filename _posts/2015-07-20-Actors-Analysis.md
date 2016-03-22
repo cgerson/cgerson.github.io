@@ -10,7 +10,7 @@ Answer: Probably not.
 
 ## Let me explain
 
-(No time for explanations? Skip to ppt presentation below)
+(No time for explanations? Skip to slides below for the gist.)
 
 Thanks to my scrupulous scraping efforts, documented <a href="http://cgerson.github.io/Webscraping/" target="_blank">in a previous blogpost</a>, I ended up with a nice, clean dataset of 617 observations. These were <b>617 unique actors</b>, all relatively successful in their field given that they appear on <a href="http://www.boxofficemojo.com/people/?view=Actor&sort=sumgross&adjust_yr=2015&p=.htm" target="_blank">Box Office Mojo's people index</a>.
 
