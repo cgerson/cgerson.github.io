@@ -15,26 +15,14 @@ Here goes.
 
 My use case: I'll often have a dataset which I'll want to subset according to values in one or more columns, and manipulate each of the subsets individually.
 
-Groupby solution: Create a dictionary from the GroupBy object!
+**Groupby solution**: Create a dictionary from the GroupBy object!
 
 Example:
 
 * Unemployment data from Spain, by year (2013-2015) and quartile (1-4).
 Here are the first 10 rows:
 
-
-|Index | Year | Quartile | Age | Unemployment Rate|
-|--- | --- | --- | --- | --- |
-|0|	2015|	4|	16-19|	66.09|
-|1|	2015|	4|	20-24|	42.52|
-|2|	2015|	4|	25-29|	27.57|
-|3|	2015|	4|	30-34|	20.25|
-|4|	2015|	4|	35-39|	17.73|
-|5|	2015|	4|	40-44|	17.29|
-|6|	2015|	4|	45-49|	18.76|
-|7|	2015|	4|	50-54|	17.77|
-|8|	2015|	4|	55-59|	19.14|
-|9|	2015|	4|	60-64|	16.74|
+<table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>Year</th>      <th>Quartile</th>      <th>Age</th>      <th>Unemployment Rate</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>2015</td>      <td>4</td>      <td>16-19</td>      <td>66.09</td>    </tr>    <tr>      <th>1</th>      <td>2015</td>      <td>4</td>      <td>20-24</td>      <td>42.52</td>    </tr>    <tr>      <th>2</th>      <td>2015</td>      <td>4</td>      <td>25-29</td>      <td>27.57</td>    </tr>    <tr>      <th>3</th>      <td>2015</td>      <td>4</td>      <td>30-34</td>      <td>20.25</td>    </tr>    <tr>      <th>4</th>      <td>2015</td>      <td>4</td>      <td>35-39</td>      <td>17.73</td>    </tr>    <tr>      <th>5</th>      <td>2015</td>      <td>4</td>      <td>40-44</td>      <td>17.29</td>    </tr>    <tr>      <th>6</th>      <td>2015</td>      <td>4</td>      <td>45-49</td>      <td>18.76</td>    </tr>    <tr>      <th>7</th>      <td>2015</td>      <td>4</td>      <td>50-54</td>      <td>17.77</td>    </tr>    <tr>      <th>8</th>      <td>2015</td>      <td>4</td>      <td>55-59</td>      <td>19.14</td>    </tr>    <tr>      <th>9</th>      <td>2015</td>      <td>4</td>      <td>60-64</td>      <td>16.74</td>    </tr>  </tbody></table>
 
 
 Let's say I want to subset the data by year. There are a few ways to do this in pandas, but with GroupBy... ONE ELEGANT LINE:
