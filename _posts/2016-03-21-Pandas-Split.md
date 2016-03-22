@@ -17,7 +17,8 @@ Here goes.
 
 **Groupby solution**: Create a dictionary from the GroupBy object!
 
-###Example: Unemployment data from Spain, by year (2013-2015) and quartile (1-4).
+###Example: Unemployment data from Spain, years 2013-2015
+(<a href="http://www.ine.es/welcome.shtml">Source</a>)
 
 Here are the first 10 rows:
 
@@ -27,6 +28,6 @@ Let's say I want to **subset the data by year**. There are a few ways to do this
 
 `year_subsets = dict(list(new_df.groupby('Year')))`
 
-The resulting `year_subsets` is a dictionary whose keys are years (2013, 2014, 2015) and whose values are DataFrames of rows from said year.
+The resulting `year_subsets` is a dictionary whose keys are years (2013, 2014, 2015) and whose values are DataFrames of rows from said year. For example, `year_subsets['2014']` returns a DataFrame object.
 
 There are alternative ways to subset data in pandas, but this is the only one-liner I've seen that returns the data in the original format with its original indices.
