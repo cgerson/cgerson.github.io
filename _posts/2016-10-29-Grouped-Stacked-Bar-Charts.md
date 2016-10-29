@@ -12,9 +12,11 @@ In particular, let's make a chart with Python's <a href="http://matplotlib.org/i
 
 Its purpose is to be an out-of-the-box solution. Pass in a Pandas data object and the segments you wish to group by (i.e. columns in the dataframe), et voila!
 
-`clustered_stacked_chart.plot(electiondata,
+```
+clustered_stacked_chart.plot(electiondata,
                              my_two_segments=['Gender','Age'],
-                             title = "Election Preferences by Gender and Age")`
+                             title = "Election Preferences by Gender and Age")
+```
 
 
 <img style= "width: 900;" src="http://cgerson.github.io/images/Election_Preferences_by_Gender_and_Age.png">
