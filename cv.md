@@ -23,6 +23,14 @@ _Bachelor's degree in Economics_, _Minor in Business Administration & Management
 
 ###EXPERIENCE:
 
+**Alpha,** New York, NY
+12/2015-present
+
+_Quantitative Analytics Manager_
+
+- Helping Product Managers get quick customer feedback to make smarter product decisions.
+- Find out more! <a href="http://alphahq.com">alphahq.com</a>
+
 **Metis,** New York, NY                                                                        6/2015-9/2015
 
 _Data Science Fellow_
@@ -47,7 +55,7 @@ _Research Assistant in the Applied Economics Department, Professor Juan Delgado 
 
 _Conversation and Language assistant_
 
-- English and science classes in city primary school (C.E.I.P. Vicente Aleixandre). Included lesson planning support as well as advanced instruction for teachers. 
+- English and science classes in city primary school (C.E.I.P. Vicente Aleixandre). Included lesson planning support as well as advanced instruction for teachers.
 
 **Boston University School of Management,** Boston, MA                                        1/2009-8/2010
 
