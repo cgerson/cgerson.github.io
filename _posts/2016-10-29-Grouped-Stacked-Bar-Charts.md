@@ -9,6 +9,9 @@ Today I sent in my absentee ballot (Howdy, Texas) and set up a module to <b>char
 
 In particular, let's make a matplotlib chart to see -- <b>which candidate are each gender and each age group leaning towards?</b> The module has got other applications, so I thought I'd share it here.
 
+<img style= "width: 780px;" src="http://cgerson.github.io/images/Election_Preferences_by_Gender_and_Age.png">
+
+
 Find the GitHub source code <a href="https://github.com/cgerson/clustered-stacked-chart">here</a>.
 
 And the Data Source here:
