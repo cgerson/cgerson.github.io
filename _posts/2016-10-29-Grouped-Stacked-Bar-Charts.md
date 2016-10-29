@@ -8,9 +8,9 @@ Tis the season to visualize election polling data!
 Today I sent in my absentee ballot (howdy, Texas) and set up a module to <b>chart survey results based on respondent demographic data</b>.
 
 In particular, let's make a chart with Python's <a href="http://matplotlib.org/index.html">matplotlib</a> plotting library to see -- <b>which candidate are each gender and each age group leaning towards?</b> The module has got other applications, so I thought I'd share it here.
-<br><br>
 
 Its purpose is to be an out-of-the-box solution. Pass in a Pandas data object and the segments you wish to group by (i.e. columns in the dataframe), et voila!
+<br>
 
 ```
 clustered_stacked_chart.plot(electiondata,
