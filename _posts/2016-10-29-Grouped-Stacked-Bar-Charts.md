@@ -7,9 +7,11 @@ Tis the season to visualize election results!
 
 Today I sent in my absentee ballot (Howdy, Texas) and set up a module to <b>chart survey results based on respondent demographic data</b>.
 
-In particular, let's make a matplotlib chart to see -- <b>which candidate are each gender and each age group leaning towards?</b> The module has got other applications, so I thought I'd share it here.
+In particular, let's make a chart with Python's <a href="http://matplotlib.org/index.html">matplotlib</a> plotting library to see -- <b>which candidate are each gender and each age group leaning towards?</b> The module has got other applications, so I thought I'd share it here.
+
 
 <img style= "width: 780px;" src="http://cgerson.github.io/images/Election_Preferences_by_Gender_and_Age.png">
+
 
 
 Find the GitHub source code <a href="https://github.com/cgerson/clustered-stacked-chart">here</a>.
