@@ -8,28 +8,21 @@ permalink: /cv/
 > [clairegerson[at]gmail.com](mailto:clairegerson@gmail.com)  
 > [github.com/cgerson](http://www.github.com/cgerson)  
 
-
-###EDUCATION:
-
-**Boston University,** Boston, MA                                                                9/2006 -5/2010
-
-_Master's degree in Economics_ GPA: 3.75/4.0, Magna cum Laude
-
-_Bachelor's degree in Economics_, _Minor in Business Administration & Management_
-
-- _Relevant coursework_: Statistics, Econometrics, Microeconomic and Macroeconomic Theory, Economics of Information, Financial & Managerial Accounting, Introduction to Law
-
-- Named to the Dean's List, 2006-2010
-
 ###EXPERIENCE:
 
+**Tinder,** Los Angeles, CA
+12/2018-present
+
+_Senior Data Analyst_
+
 **Alpha,** New York, NY
-12/2015-present
+12/2015-11/2018
 
-_Quantitative Analytics Manager_
+_Data Product Owner_
 
-- Helping Product Managers get quick customer feedback to make smarter product decisions.
-- Find out more! <a href="http://alphahq.com">alphahq.com</a>
+- Worked with other product owners, engineers, internal users and customers to build and lead platform's quantitative data offering
+- Architected and managed in-house survey and data visualization tools, survey and sourcing infrastructure and API integrations
+- Learn more: <a href="http://alphahq.com" target="_blank">alphahq.com</a>
 
 **Metis,** New York, NY                                                                        6/2015-9/2015
 
@@ -63,6 +56,18 @@ _Research Assistant in the Business Policy & Law Department, Professor David Wei
 
 - Conducted extensive online and library research on the effects of management structure on labor-law compliance in the hospitality industry; presented detailed research to investigation team.
 - Assisted in creating the "Strategic enforcement" publication that was designed for and presented to the US Department of Labor.
+
+###EDUCATION:
+
+**Boston University,** Boston, MA                                                                9/2006 -5/2010
+
+_Master's degree in Economics_ GPA: 3.75/4.0, Magna cum Laude
+
+_Bachelor's degree in Economics_, _Minor in Business Administration & Management_
+
+- _Relevant coursework_: Statistics, Econometrics, Microeconomic and Macroeconomic Theory, Economics of Information, Financial & Managerial Accounting, Introduction to Law
+
+- Named to the Dean's List, 2006-2010
 
 ###SKILLS:
 
