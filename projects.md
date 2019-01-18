@@ -1,9 +1,8 @@
 ---
 layout: page
+title: Projects
 permalink: /projects/
 ---
-
-# Projects
 
 ### <a href = "https://summarizeme.herokuapp.com/" target="_blank">summarizeme.herokuapp.com</a>
 
