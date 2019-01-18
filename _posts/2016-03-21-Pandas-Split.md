@@ -17,7 +17,7 @@ Here goes.
 
 **Groupby solution**: Create a dictionary from the GroupBy object!
 
-###Example: Unemployment data from Spain, years 2013-2015
+### Example: Unemployment data from Spain, years 2013-2015
 (<a href="http://www.ine.es/welcome.shtml">Source</a>)
 
 Here are the first 10 rows:
